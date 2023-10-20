@@ -37,7 +37,7 @@ export default function Intro() {
         }
     };
 
-    { audioEnded ? window.location.href = history + "/lessons/" : console.log("play") }
+    { audioEnded ? window.location.href = history + "lessons/" : console.log("play") }
 
     return (
         <motion.div
