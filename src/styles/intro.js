@@ -8,7 +8,6 @@ export const IntroWrapper = styled.div`
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 0;
 `
 
 export const IntroContent = styled.div.attrs((props) => ({
