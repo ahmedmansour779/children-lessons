@@ -62,7 +62,7 @@ export default function Intro() {
                             }
                         </Audio>
                         <div>
-                            <audio autoPlay ref={audioRef}>
+                            <audio ref={audioRef}>
                                 <source src={audioSrc} type="audio/mpeg" />
                                 Your browser does not support the audio element.
                             </audio>
