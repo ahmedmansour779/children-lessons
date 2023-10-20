@@ -1,0 +1,46 @@
+/* Circle container styles */
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styles for each part */
+.part {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(50% 50%, 0 0, 0 100%);
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+/* Styles for each part with different colors */
+.part:nth-child(1) {
+    transform: rotate();
+    -webkit-transform: rotate();
+    -moz-transform: rotate();
+    -ms-transform: rotate();
+    -o-transform: rotate();
+}
+
+.part:nth-child(2) {
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+
+/* ... Add styles for part3 to part12 with corresponding rotations ... */

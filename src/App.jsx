@@ -1,0 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Intro from "./components/intro/Intro"
+import Lesson from "./components/lesson"
+import Lessons from "./components/lessons"
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/lesson/:lessonId" element={<Lesson />} />
+        <Route path="/lessons" element={<Lessons />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
