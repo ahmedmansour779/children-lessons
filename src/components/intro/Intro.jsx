@@ -6,12 +6,17 @@ import image from "../../shared/children.png";
 import audioSrc from "../../shared/introMusic.mp3";
 import { Audio, IntroContent, IntroWrapper, Text } from "../../styles/intro";
 
-
 export default function Intro() {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [audioEnded, setAudioEnded] = useState(false);
-    const history = window.location.href.replace('/children-lessons/', '/lessons/');
+    // const history = window.location.href.replace('/children-lessons/', '/lessons/');
+    let linkRef = useRef(audioEnded ? true : null);
+
+    if (audioEnded) {
+        // console.log("done")
+        linkRef.current.click()
+    }
 
     useEffect(() => {
         const audioElement = audioRef.current;
@@ -39,16 +44,16 @@ export default function Intro() {
         }
     };
 
+    // if (audioEnded) {
+    //     link.click()
+    // }
+
     // history.replace('/children-lessons/', '/lessons/')
 
-    console.log(history)
+    // console.log(history)
 
-    { audioEnded ? window.location.href = history : console.log("play") }
 
-    const handleAudioEnd = () => {
-        history.push('/lesson');
-    };
-
+    // { audioEnded ? window.location.href = history : null }
     return (
         <motion.div
             animate={{ opacity: 1 }}
@@ -72,11 +77,11 @@ export default function Intro() {
                             }
                         </Audio>
                         <div>
-                            <audio ref={audioRef} onEnded={handleAudioEnd}>
+                            <audio ref={audioRef} >
                                 <source src={audioSrc} type="audio/mpeg" />
                                 Your browser does not support the audio element.
                             </audio>
-                            <Link to="/lessons" >
+                            <Link ref={linkRef} style={{ display: "none" }} to="/lessons" id="link-audio">
                                 <button>Navigate to Lesson</button>
                             </Link>
                         </div>
