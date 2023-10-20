@@ -8,9 +8,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/children-lessons/" element={<Intro />} />
-        {/* <Route path="*" element={<Intro />} /> */}
         <Route path="/children-lessons/lessons/:lessonId" element={<Lesson />} />
-        <Route path="/children-lessons/lessons" element={<Lessons />} />
+        <Route path="/children-lessons/lessons/" element={<Lessons />} />
       </Routes>
     </BrowserRouter>
   )
