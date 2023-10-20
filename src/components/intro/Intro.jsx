@@ -25,22 +25,6 @@ export default function Intro() {
         };
     }, []);
 
-    // window.location.href = history + "lesson";
-
-    // useEffect(() => {
-    //     const audioElement = audioRef.current;
-    //     const handleAudioEnd = () => {
-    //         history.push('/lesson');
-    //     };
-
-    //     audioElement.addEventListener('ended', handleAudioEnd);
-
-    //     return () => {
-    //         audioElement.removeEventListener('ended', handleAudioEnd);
-    //         console.log(window.location.)
-    //     };
-    // }, [history]);
-
     const togglePlayPause = () => {
         let audioElement = audioRef.current;
         if (audioElement) {
@@ -61,7 +45,6 @@ export default function Intro() {
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-        // style={{ display: audioEnded && "none" }}
         >
             <IntroWrapper>
                 <IntroContent>

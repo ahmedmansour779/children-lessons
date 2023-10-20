@@ -16,7 +16,7 @@ export default function Lessons() {
             <LessonsContainer>
                 {
                     lessons.map((item) => (
-                        <Link key={item.id} to={`/lesson/${item.id}`}>
+                        <Link key={item.id} to={`/children-lessons/lessons/${item.id}`}>
                             {
                                 part1.includes(item.id) ?
                                     <LessonCart style={{ backgroundColor: "#99B080", color: "" }}>
