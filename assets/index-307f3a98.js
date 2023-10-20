@@ -74,7 +74,6 @@ Error generating stack: `+o.message+`
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 0;
 `,RC=Nt.div.attrs(e=>({className:e.className||"container"}))`
     display: flex;
     flex-wrap: wrap;
