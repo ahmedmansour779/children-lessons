@@ -2,11 +2,13 @@ import styled from "styled-components";
 import style from "./config";
 
 export const IntroWrapper = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffc15b;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
 `
 
 export const IntroContent = styled.div.attrs((props) => ({
