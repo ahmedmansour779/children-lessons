@@ -1,15 +1,17 @@
 import { IconPlayerPauseFilled, IconPlayerPlayFilled } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { Link } from 'react-router-dom';
 import image from "../../shared/children.png";
 import audioSrc from "../../shared/introMusic.mp3";
 import { Audio, IntroContent, IntroWrapper, Text } from "../../styles/intro";
+
 
 export default function Intro() {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [audioEnded, setAudioEnded] = useState(false);
-    const history = window.location.href;
+    const history = window.location.href.replace('/children-lessons/', '/lessons/');
 
     useEffect(() => {
         const audioElement = audioRef.current;
@@ -37,7 +39,15 @@ export default function Intro() {
         }
     };
 
-    { audioEnded ? window.location.href = history + "lessons" : console.log("play") }
+    // history.replace('/children-lessons/', '/lessons/')
+
+    console.log(history)
+
+    { audioEnded ? window.location.href = history : console.log("play") }
+
+    const handleAudioEnd = () => {
+        history.push('/lesson');
+    };
 
     return (
         <motion.div
@@ -62,10 +72,13 @@ export default function Intro() {
                             }
                         </Audio>
                         <div>
-                            <audio ref={audioRef}>
+                            <audio ref={audioRef} onEnded={handleAudioEnd}>
                                 <source src={audioSrc} type="audio/mpeg" />
                                 Your browser does not support the audio element.
                             </audio>
+                            <Link to="/lessons" >
+                                <button>Navigate to Lesson</button>
+                            </Link>
                         </div>
                     </div>
                     <div>
