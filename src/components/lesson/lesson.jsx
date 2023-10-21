@@ -9,11 +9,13 @@ export default function Lesson() {
     const itemNumber = +lessonId - 1
     const lesson = lessons[itemNumber]
 
+    console.log(lesson.title)
+
     return (
         <LessonContainer>
             {
                 part1.includes(itemNumber) ?
-                    <Title part1={true}>
+                    <Title part1>
                         {lesson.title}
                     </Title> :
                     part2.includes(itemNumber) ?
