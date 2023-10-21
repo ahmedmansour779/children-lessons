@@ -10,11 +10,9 @@ export default function Intro() {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [audioEnded, setAudioEnded] = useState(false);
-    // const history = window.location.href.replace('/children-lessons/', '/lessons/');
     let linkRef = useRef(audioEnded ? true : null);
 
     if (audioEnded) {
-        // console.log("done")
         linkRef.current.click()
     }
 
@@ -44,16 +42,6 @@ export default function Intro() {
         }
     };
 
-    // if (audioEnded) {
-    //     link.click()
-    // }
-
-    // history.replace('/children-lessons/', '/lessons/')
-
-    // console.log(history)
-
-
-    // { audioEnded ? window.location.href = history : null }
     return (
         <motion.div
             animate={{ opacity: 1 }}
@@ -81,7 +69,7 @@ export default function Intro() {
                                 <source src={audioSrc} type="audio/mpeg" />
                                 Your browser does not support the audio element.
                             </audio>
-                            <Link ref={linkRef} style={{ display: "none" }} to="/lessons" id="link-audio">
+                            <Link ref={linkRef} style={{ display: "none" }} to="/lessons">
                                 <button>Navigate to Lesson</button>
                             </Link>
                         </div>

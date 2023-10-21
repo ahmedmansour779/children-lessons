@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const LessonWrapper = styled.div`
-    background-color: #fff1de;
-    min-height: 100vh;
-    padding: 2rem 0;
-`
-
 export const LessonsContainer = styled.div.attrs((props) => ({
     className: props.className || 'container',
 }))`
@@ -15,6 +9,12 @@ export const LessonsContainer = styled.div.attrs((props) => ({
     gap: 1.5rem;
     justify-content:center;
 `
+
+export const LessonWrapper = styled.div`
+    min-height: 100vh;
+    padding: 2rem 0;
+`
+
 
 export const LessonCart = styled.div`
     width: 10rem;

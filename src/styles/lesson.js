@@ -1,22 +1,20 @@
 import styled from "styled-components";
+import style from "./config";
 
-export const LessonWrapper = styled.div`
+export const LessonContainer = styled.div.attrs((props) => ({
+    className: props.className || 'container',
+}))`
     display: flex;
-    min-height: 100vh;
+    padding: 2rem 0;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    a {
-        background-color: #00bcd475;
-        padding: 1rem;
-        border-radius: 50%;
-        border: 1px solid #00bcd4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s all ease-in-out;
-        &:hover {
-            background-color: #00bcd4;
-        }
-    }
+`
+
+export const Title = styled.div`
+    color : ${props => (props.part1 ?
+        style.part1Color : props.part2 ?
+            style.part2Color : props.part3 ?
+                style.part3Color : style.part4Color)};
+    font-size: 2rem;
+    text-shadow: 0 0 16px ${style.shadow};
 `

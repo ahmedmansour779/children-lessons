@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import style from "./config";
 
 export const IntroWrapper = styled.div`
     min-height: 100vh;
@@ -53,7 +52,4 @@ export const Text = styled.div`
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
-    &:hover {
-        background: ${style.introBackgroundColor};
-    }
 `
