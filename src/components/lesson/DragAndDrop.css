@@ -1,0 +1,9 @@
+.dropzone {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    text-align: center;
+}
+
+.dragging {
+    border: 2px dashed #3498db;
+}

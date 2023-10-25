@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import partsData from "../data/parts";
-
-const items = partsData.length
 
 export const CircleWrapper = styled.div`
     display: flex;

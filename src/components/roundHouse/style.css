@@ -1,0 +1,31 @@
+.circle {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.part {
+    position: absolute;
+    width: 278px;
+    padding: 0 10px;
+    height: 298px;
+    transform-origin: bottom left;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.part img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

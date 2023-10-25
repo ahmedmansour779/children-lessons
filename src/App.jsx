@@ -1,3 +1,4 @@
+import { MantineProvider } from "@mantine/core"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Intro from "./components/intro/Intro"
 import Lesson from "./components/lesson"
@@ -8,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/children-lessons/" element={<Intro />} />
-        <Route path="/lessons/:lessonId" element={<Lesson />} />
-        <Route path="/lessons" element={<Lessons />} />
+        <Route path="/children-lessons/lessons/:lessonId/:lessonPage" element={<MantineProvider><Lesson /></MantineProvider>} />
+        <Route path="/children-lessons/lessons" element={<Lessons />} />
       </Routes>
     </BrowserRouter>
   )
