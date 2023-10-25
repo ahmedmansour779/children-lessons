@@ -12,8 +12,9 @@ export const RoundHouseWrapper = styled.div`
 
 export const TitleHouseWrapper = styled.div`
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 25%;
+    height: 25%;
+    margin: 37%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +22,8 @@ export const TitleHouseWrapper = styled.div`
 `
 
 export const TitleHouse = styled.div`
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     border: 1px solid #000;
     border-radius: 50%;
     background: #fff;

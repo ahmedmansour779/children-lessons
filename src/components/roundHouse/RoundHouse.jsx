@@ -4,12 +4,13 @@ import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import lessons from "../../data/lessons";
 import { part1, part2, part3 } from '../../data/parts';
+
+
 import falseAudio from "../../shared/answer/false.mp3";
 import falseImage from "../../shared/answer/false.png";
 import trueAudio from "../../shared/answer/true.mp3";
 import trueImage from "../../shared/answer/true.png";
 
-import { useRef } from 'react';
 import { AnswerWrapper, Options, PopupWrapper, RoundHouseWrapper, TitleHouse, TitleHouseWrapper } from "../../styles/roundHouse";
 import "./style.css";
 
@@ -21,12 +22,11 @@ export default function RoundHouse() {
     let myArray = []
     let degree = 360 / lesson.circleParts
     let inclination = 0;
-    let [dragId, setDragId] = useState(-1)
+    let [dragId, setDragId] = useState(null)
     let drag = null
-    let [show, setShow] = useState(false)
-    let [answer, setAnswer] = useState(true)
-    let trueAudioRef = useRef(null)
-    let falseAudioRef = useRef(null)
+
+    let [show, setShow] = useState(null)
+    let [answer, setAnswer] = useState(null)
 
     for (let i = 1; i <= lesson.circleParts; i++) {
         myArray.push(i)
@@ -46,65 +46,46 @@ export default function RoundHouse() {
     const handelDrag = (e) => {
         let imageSrc = e.target.src.toString();
         let indexW = imageSrc.indexOf("w/")
-
-        imageSrc.indexOf("w/") == 68 ? setDragId(imageSrc[indexW + 2]) : setDragId(-1)
-        // imageSrc.indexOf("w/") == 68 && setDragId(+imageSrc[indexW + 2])
-        // style
+        imageSrc.indexOf("w/") == 68 ? setDragId(imageSrc[indexW + 2]) : setDragId(null)
         drag = e.target
         drag.style.opacity = "0.5"
     }
-
-
     const handelDragEnd = (e) => {
         e.target.style.opacity = "1"
-        // drag = null
-        // dragId = null
-        console.log(dragId)
     }
-
-
     const handleDragOver = (e) => {
         e.preventDefault();
     };
 
+    // drop event
+    const trueAnswer = (e) => {
+        setAnswer(true);
+        setShow(true);
+        e.target.appendChild(drag);
+        // trueAudioRef.current.play();
+    }
+    const falseAnswer = () => {
+        setAnswer(false);
+        setShow(true);
+        // falseAudioRef.current.play();
+        // console.log(false)
+    }
     const handelDrop = (e) => {
-        // e.preventDefault();
         // console.log("test")
-        // if (dragId == e.target.id) {
-        //     setShow(true)
-        //     setAnswer(true)
-        //     e.target.appendChild(drag)
-        //     trueAudioRef.current.play()
-        // } else {
-        //     setShow(true)
-        //     console.log(show)
-        //     setAnswer(false)
-        //     falseAudioRef.current.play()
-        // }
-        console.log("test")
         e.preventDefault();
-        if (dragId === e.target.id) {
-            setShow(true);
-            setAnswer(true);
-            e.target.appendChild(drag);
-            trueAudioRef.current.play();
-        } else {
-            setShow(true);
-            setAnswer(false);
-            falseAudioRef.current.play();
+        console.log(e.target.children)
+        if (dragId == e.target.id) {
+            trueAnswer(e)
+        } else if (dragId !== e.target.id) {
+            falseAnswer()
         }
     }
 
-    const displayStyle = {
-        display: show == true ? 'fixed' : "none",
-    }
+    // console.log(show, answer)
 
     const hiddenModel = () => {
         setShow(false)
-        trueAudioRef.current.pause()
-        falseAudioRef.current.pause()
     }
-
 
     return (
         <RoundHouseWrapper>
@@ -122,9 +103,8 @@ export default function RoundHouse() {
                                     id={e}
                                     className="part"
                                     key={index}
-                                    // onDragOver={null}
-                                    onDrop={handelDrop}
-                                    onDragOver={handleDragOver}
+                                    draggable={true}
+                                    onDragOver={handleDragOver} onDrop={handelDrop}
                                     style={
                                         {
                                             transform: `rotate(${index * degree}deg) skew(0deg, -${inclination}deg)`,
@@ -157,9 +137,8 @@ export default function RoundHouse() {
                                     return (
                                         <Carousel.Slide key={i} style={{ width: "100%" }} >
                                             <img
-                                                onDragStart={handelDrag}
+                                                onDrag={handelDrag}
                                                 onDragEnd={handelDragEnd}
-                                                // onDragOver={handleDragOver}
                                                 src={value}
                                                 draggable={true}
                                             />
@@ -188,7 +167,6 @@ export default function RoundHouse() {
                                                 <img
                                                     onDragStart={handelDrag}
                                                     onDragEnd={handelDragEnd}
-                                                    onDragOver={null}
                                                     src={value}
                                                     draggable={true}
                                                 />
@@ -217,7 +195,6 @@ export default function RoundHouse() {
                                                     <img
                                                         onDragStart={handelDrag}
                                                         onDragEnd={handelDragEnd}
-                                                        onDragOver={null}
                                                         src={value}
                                                         draggable={true}
                                                     />
@@ -245,7 +222,6 @@ export default function RoundHouse() {
                                                     <img
                                                         onDragStart={handelDrag}
                                                         onDragEnd={handelDragEnd}
-                                                        onDragOver={null}
                                                         src={value}
                                                         draggable={true}
                                                     />
@@ -257,28 +233,32 @@ export default function RoundHouse() {
 
                             </Options>
             }
-            <PopupWrapper onClick={hiddenModel} style={displayStyle}>
-                {
-                    answer === true ?
+            {
+                show == true &&
+                <PopupWrapper onClick={hiddenModel} style={{ display: "fixed" }}>
+                    {
+                        answer === true &&
                         <AnswerWrapper>
                             <img src={trueImage} alt='true' />
-                            <audio controls ref={trueAudioRef} style={{ display: "none" }}>
+                            <audio controls autoPlay style={{ display: "none" }}>
                                 <source src={trueAudio} type="audio/mpeg" />
                                 Your browser does not support the audio element.
                             </audio>
-                        </AnswerWrapper> : null
-                }
-                {
-                    answer === false ?
+                        </AnswerWrapper>
+                    }
+                    {
+                        answer === false &&
                         <AnswerWrapper>
                             <img src={falseImage} alt='false' />
-                            <audio controls ref={falseAudioRef} style={{ display: "none" }}>
+                            <audio controls autoPlay style={{ display: "none" }}>
                                 <source src={falseAudio} type="audio/mpeg" />
                                 Your browser does not support the audio element.
                             </audio>
-                        </AnswerWrapper> : null
-                }
-            </PopupWrapper>
+                        </AnswerWrapper>
+                    }
+                </PopupWrapper>
+            }
+
         </RoundHouseWrapper>
     )
 }
