@@ -44,9 +44,9 @@ export default function RoundHouse() {
 
     // drag event 
     const handelDrag = (e) => {
-        let imageSrc = e.target.src.toString();
-        let indexW = imageSrc.indexOf("w/")
-        imageSrc.indexOf("w/") == 68 ? setDragId(imageSrc[indexW + 2]) : setDragId(null)
+        let idImage = e.target.className;
+        // let indexW = imageSrc.indexOf("w/")
+        idImage !== undefined ? setDragId(idImage) : setDragId(null)
         drag = e.target
         drag.style.opacity = "0.5"
     }
@@ -141,6 +141,7 @@ export default function RoundHouse() {
                                                 onDragEnd={handelDragEnd}
                                                 src={value}
                                                 draggable={true}
+                                                className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1}
                                             />
                                         </Carousel.Slide>
                                     )
