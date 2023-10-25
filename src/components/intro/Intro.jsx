@@ -69,7 +69,7 @@ export default function Intro() {
                                 <source src={audioSrc} type="audio/mpeg" />
                                 Your browser does not support the audio element.
                             </audio>
-                            <Link ref={linkRef} style={{ display: "none" }} to="/lessons">
+                            <Link ref={linkRef} style={{ display: "none" }} to="/children-lessons/lessons/">
                                 <button>Navigate to Lesson</button>
                             </Link>
                         </div>

@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/children-lessons/" element={<Intro />} />
-        <Route path="/children-lessons/lessons/:lessonId/:lessonPage" element={<MantineProvider><Lesson /></MantineProvider>} />
         <Route path="/children-lessons/lessons" element={<Lessons />} />
+        <Route path="/children-lessons/lessons/:lessonId/:lessonPage" element={<MantineProvider><Lesson /></MantineProvider>} />
       </Routes>
     </BrowserRouter>
   )
