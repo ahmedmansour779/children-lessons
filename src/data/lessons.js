@@ -2,7 +2,23 @@ import {
     image1_1, image1_2_1, image1_2_2, image1_2_3, image1_2_4, image1_3_1, image1_3_2, image1_3_3, image1_3_4, image1_3_5, image1_4_1, image1_4_2, image1_4_3, image1_4_4, image1_4_5, image1_5_1, image1_5_2, image1_5_3, image1_t_1, image1_t_2, image1_t_3, image1_t_4, image1_t_5, image1_t_6, image1_t_7
 } from "./image/1.js"
 import {
-    image2_1_1, image2_2_1, image2_2_2, image2_2_3, image2_2_4, image2_2_5, image2_3_1, image2_3_2, image2_3_3, image2_3_4, image2_t_1, image2_t_2, image2_t_3, image2_t_4, image2_t_5, image2_t_6, image2_t_7
+    image2_1_1,
+    image2_2_1,
+    image2_2_2,
+    image2_2_3,
+    image2_2_4,
+    image2_2_5,
+    image2_3_1,
+    image2_3_2,
+    image2_3_3,
+    image2_3_4,
+    image2_t_1,
+    image2_t_2,
+    image2_t_3,
+    image2_t_4,
+    image2_t_5,
+    image2_t_6,
+    image2_t_7
 } from "./image/2.js"
 import {
     image3_1_1,
@@ -58,23 +74,155 @@ import {
     image5_t_6,
     image5_t_7
 } from "./image/5.js"
+import {
+    image6_1_1,
+    image6_2_1,
+    image6_2_2,
+    image6_2_3,
+    image6_2_4,
+    image6_3_1,
+    image6_3_2,
+    image6_3_3,
+    image6_3_4,
+    image6_t_1,
+    image6_t_2,
+    image6_t_3,
+    image6_t_4,
+    image6_t_5,
+    image6_t_6
+} from "./image/6.js"
+import {
+    image7_1_1,
+    image7_2_1,
+    image7_2_2,
+    image7_2_3,
+    image7_2_4,
+    image7_3_1,
+    image7_3_2,
+    image7_3_3,
+    image7_3_4,
+    image7_t_1,
+    image7_t_2,
+    image7_t_3,
+    image7_t_4,
+    image7_t_5,
+    image7_t_6,
+    image7_t_7
+} from "./image/7.js"
+import {
+    image8_1_1,
+    image8_2_1,
+    image8_2_2,
+    image8_3_1,
+    image8_3_2,
+    image8_3_3,
+    image8_4_1,
+    image8_t_1,
+    image8_t_2,
+    image8_t_3,
+    image8_t_4,
+    image8_t_5,
+    image8_t_6
+} from "./image/8.js"
+import {
+    image9_1_1,
+    image9_2_1,
+    image9_3_1,
+    image9_3_2,
+    image9_3_3,
+    image9_t_1,
+    image9_t_2,
+    image9_t_3,
+    image9_t_4,
+    image9_t_5,
+    image9_t_6
+} from "./image/9.js"
+// 10 : 19
+import {
+    image10_1_1,
+    image10_2_1,
+    image10_2_2,
+    image10_2_3,
+    image10_2_4,
+    image10_2_5,
+    image10_2_6,
+    image10_t_1,
+    image10_t_2,
+    image10_t_3,
+    image10_t_4,
+    image10_t_5,
+    image10_t_6,
+} from "./image/10.js"
+import {
+    image11_1_1,
+    image11_2_1,
+    image11_2_2,
+    image11_3_1,
+    image11_3_2,
+    image11_3_3,
+    image11_3_4,
+    image11_3_5,
+    image11_t_1,
+    image11_t_2,
+    image11_t_3,
+    image11_t_4,
+    image11_t_5,
+    image11_t_6
+} from "./image/11.js"
+import {
+    image12_1_1,
+    image12_2_1,
+    image12_2_2,
+    image12_2_3,
+    image12_3_1,
+    image12_3_2,
+    image12_3_3,
+    image12_3_4,
+    image12_t_1,
+    image12_t_2,
+    image12_t_3,
+    image12_t_4,
+    image12_t_5,
+    image12_t_6
+} from "./image/12.js"
+import {
+    image13_1_1,
+    image13_2_1,
+    image13_2_2,
+    image13_2_3,
+    image13_2_4,
+    image13_3_1,
+    image13_3_2,
+    image13_3_3,
+    image13_4_1,
+    image13_4_2,
+    image13_4_3,
+    image13_t_1,
+    image13_t_2,
+    image13_t_3,
+    image13_t_4,
+    image13_t_5,
+    image13_t_6,
+    image13_t_7
+} from "./image/13.js"
 
 // audios
-import {
-    audio1_1, audio1_2, audio1_3, audio1_4
-} from "./audio/1.js"
-import {
-    audio2_1, audio2_2
-} from "./audio/2.js"
-import {
-    audio3_1, audio3_2, audio3_3, audio3_4, audio3_5, audio3_6
-} from "./audio/3.js"
-import {
-    audio4_1, audio4_2, audio4_3
-} from "./audio/4.js"
-import {
-    audio5_1, audio5_2, audio5_3
-} from "./audio/5.js"
+import { audio1_1, audio1_2, audio1_3, audio1_4 } from "./audio/1.js"
+import { audio2_1, audio2_2 } from "./audio/2.js"
+import { audio3_1, audio3_2, audio3_3, audio3_4, audio3_5, audio3_6 } from "./audio/3.js"
+import { audio4_1, audio4_2, audio4_3 } from "./audio/4.js"
+import { audio5_1, audio5_2, audio5_3 } from "./audio/5.js"
+import { audio6_1, audio6_2, audio6_3 } from "./audio/6.js"
+import { audio7_1, audio7_2, audio7_3 } from "./audio/7.js"
+import { audio8_1, audio8_2, audio8_3, audio8_4 } from "./audio/8.js"
+import { audio9_1, audio9_2 } from "./audio/9.js"
+// 10:19
+import { audio10_1, audio10_2 } from "./audio/10.js"
+import { audio11_1, audio11_2, audio11_3 } from "./audio/11.js"
+import { audio12_1, audio12_2, audio12_3 } from "./audio/12.js"
+import { audio13_1, audio13_2, audio13_3, audio13_4 } from "./audio/13.js"
+
+export const lessonVideo = [3, 9, 15, 16, 18, 20, 21, 28]
 
 const lessons = [
     {
@@ -100,8 +248,8 @@ const lessons = [
     },
     {
         id: 2,
-        title1: "ماذا افعل عند اندلاع الحريق",
-        title2: "ماذا افعل عند اندلاع الحريق",
+        title1: "ماذا افعل عند حدوث الحريق",
+        title2: "ماذا افعل عند حدوث الحريق",
         title3: "تصرفات غير صحيحه عند حدوث الحريق يجب ان ابتعد عنها",
         titleEnd: "هيا بنا الي بيتنا الدائري",
         imagePage1: image2_1_1,
@@ -111,7 +259,6 @@ const lessons = [
         imageTrue: [image2_t_1, image2_t_2, image2_t_3, image2_t_4, image2_t_5, image2_t_6, image2_t_7],
         allImage: [image2_t_3, image2_t_4, image1_5_1, image2_t_1, image2_t_2, image1_5_2, image2_t_5, image2_t_6, image1_5_3, image2_t_7],
         audio1: audio2_1,
-        audio2: audio2_1,
         audio3: audio2_2,
         pages: 4,
         circleParts: 7
@@ -180,34 +327,140 @@ const lessons = [
     {
         id: 6,
         title1: "أماكن اللعب داخل الروضة",
+        title2: "ما هي اماكن اللعب في الروضه",
+        title3: "السلوكيات الصحيحه التي يجب اتباعها في اماكن اللعب",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        imagePage1: image6_1_1,
+        imagePage2: [image6_2_1, image6_2_2, image6_2_3, image6_2_4],
+        imagePage3: [image6_3_1, image6_3_2, image6_3_3, image6_3_4],
+        imageTrue: [image6_t_1, image6_t_2, image6_t_3, image6_t_4, image6_t_5, image6_t_6],
+        allImage: [image6_t_1, image6_t_2, image6_t_3, image6_t_4, image6_t_5, image6_t_6],
+        audio1: audio6_1,
+        audio2: audio6_2,
+        audio3: audio6_3,
+        pages: 4,
+        circleParts: 6,
     },
     {
         id: 7,
-        title1: "ما هي الكهرباء",
+        title1: "الكهرباء",
+        title2: "ما هي الكهرباء",
+        title3: "مصادر الحصول علي الكهرباء",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        imagePage1: image7_1_1,
+        imagePage2: [image7_2_1, image7_2_2, image7_2_3, image7_2_4],
+        imagePage3: [image7_3_1, image7_3_2, image7_3_3, image7_3_4],
+        imageTrue: [image7_t_1, image7_t_2, image7_t_3, image7_t_4, image7_t_5, image7_t_6, image7_t_7],
+        allImage: [image7_t_1, image7_t_2, image7_t_3, image7_t_4, image7_t_5, image7_t_6, image7_t_7],
+        audio1: audio7_1,
+        audio2: audio7_2,
+        audio3: audio7_3,
+        pages: 4,
+        circleParts: 7,
+
     },
     {
         id: 8,
         title1: "نصائح للتعامل مع الكهرباء",
+        title2: "ما هي الاجهزه الكهربائيه في الروضه",
+        title3: "السلوكيات الصحيحه للتعامل مع الكهرباء في الروضه",
+        title4: "السلوكيات الخاطئه للتعامل مع الكهرباء في الروضه",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        imagePage1: image8_1_1,
+        imagePage2: [image8_2_1, image8_2_2],
+        imagePage3: [image8_3_1, image8_3_2, image8_3_3],
+        imagePage4: [image8_4_1],
+        imageTrue: [image8_t_1, image8_t_2, image8_t_3, image8_t_4, image8_t_5, image8_t_6],
+        allImage: [image8_t_1, image8_t_2, image8_t_3, image8_t_4, image8_t_5, image8_t_6],
+        audio1: audio8_1,
+        audio2: audio8_2,
+        audio3: audio8_3,
+        audio4: audio8_4,
+        pages: 5,
+        circleParts: 6,
     },
     {
         id: 9,
-        title1: "حيوانات الغابة السعيدة والتطعيمات",
+        title1: "قصه حيوانات الغابة السعيدة والتطعيمات",
+        title2: "تفتكروا يا اصدقائي ما هي اهميه التطعيمات",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        imagePage1: image9_1_1,
+        imagePage2: [image9_2_1],
+        imagePage3: [image9_3_1, image9_3_2, image9_3_3],
+        imageTrue: [image9_t_1, image9_t_2, image9_t_3, image9_t_4, image9_t_5, image9_t_6],
+        allImage: [image9_t_1, image9_t_2, image9_t_3, image9_t_4, image9_t_5, image9_t_6],
+        audio1: audio9_1,
+        audio2: audio9_2,
+        pages: 3,
+        circleParts: 6
     },
     {
         id: 10,
-        title1: "ما هي تطعيماتي المهمة",
+        title1: "تطعيماتي المهمة",
+        title2: "ما هي التطعيمات الضروريه التي يجب الحصول عليها",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        imagePage1: image10_1_1,
+        imagePage2: [image10_2_1, image10_2_2, image10_2_3, image10_2_4, image10_2_5, image10_2_6],
+        imageTrue: [image10_t_1, image10_t_2, image10_t_3, image10_t_4, image10_t_5, image10_t_6],
+        allImage: [image10_t_1, image10_t_2, image10_t_3, image10_t_4, image10_t_5, image10_t_6],
+        audio1: audio10_1,
+        audio2: audio10_2,
+        pages: 3,
+        circleParts: 6,
     },
     {
         id: 11,
         title1: "يلا بينا نأخذ التطعيمات",
+        title2: "اماكن تلقي التطعيمات",
+        title3: "خطوره عدم تلقي التطعيمات",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        imagePage1: image11_1_1,
+        imagePage2: [image11_2_1, image11_2_2],
+        imagePage3: [image11_3_1, image11_3_2, image11_3_3, image11_3_4, image11_3_5],
+        imageTrue: [image11_t_1, image11_t_2, image11_t_3, image11_t_4, image11_t_5, image11_t_6],
+        allImage: [image11_t_1, image11_t_2, image11_t_3, image11_t_4, image11_t_5, image11_t_6],
+        audio1: audio11_1,
+        audio2: audio11_2,
+        audio3: audio11_3,
+        pages: 4,
+        circleParts: 6
     },
     {
         id: 12,
-        title1: "الوقاية من الأمراض",
+        title1: "الامراض التي تصيب اجسادنا",
+        title2: "ما هي الامراض التي قد تصيبنا",
+        title3: "بعض العادات السليمه للوقايه من الامراض",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        imagePage1: image12_1_1,
+        imagePage2: [image12_2_1, image12_2_2, image12_2_3],
+        imagePage3: [image12_3_1, image12_3_2, image12_3_3, image12_3_4],
+        imageTrue: [image12_t_1, image12_t_2, image12_t_3, image12_t_4, image12_t_5, image12_t_6],
+        allImage: [image12_t_1, image12_t_2, image12_t_3, image12_t_4, image12_t_5, image12_t_6],
+        audio1: audio12_1,
+        audio2: audio12_2,
+        audio3: audio12_3,
+        pages: 4,
+        circleParts: 6
     },
     {
         id: 13,
         title1: "الوقاية من الأمراض الغير معدية",
+        title2: "ما هي الامراض الغير معديه",
+        title3: "طرق الوقايه من الامراض الغير معديه",
+        title4: "التصرفات الصحيحه عند الاصابه من الامراض الغير معديه",
+        titleEnd: "هيا بنا الي بيتنا الدائري",
+        audio1: audio13_1,
+        audio2: audio13_2,
+        audio3: audio13_3,
+        audio4: audio13_4,
+        imagePage1: image13_1_1,
+        imagePage2: [image13_2_1, image13_2_2, image13_2_3, image13_2_4],
+        imagePage3: [image13_3_1, image13_3_2, image13_3_3],
+        imagePage4: [image13_4_1, image13_4_2, image13_4_3],
+        imageTrue: [image13_t_1, image13_t_2, image13_t_3, image13_t_4, image13_t_5, image13_t_6, image13_t_7],
+        allImage: [image13_t_1, image13_t_2, image13_t_3, image13_t_4, image13_t_5, image13_t_6, image13_t_7],
+        pages: 5,
+        circleParts: 7,
     },
     {
         id: 14,

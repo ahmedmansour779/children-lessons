@@ -166,10 +166,11 @@ export default function RoundHouse() {
                                         return (
                                             <Carousel.Slide key={i} style={{ width: "100%" }} >
                                                 <img
-                                                    onDragStart={handelDrag}
+                                                    onDrag={handelDrag}
                                                     onDragEnd={handelDragEnd}
                                                     src={value}
                                                     draggable={true}
+                                                    className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1}
                                                 />
                                             </Carousel.Slide>
                                         )
@@ -194,10 +195,11 @@ export default function RoundHouse() {
                                             return (
                                                 <Carousel.Slide key={i} style={{ width: "100%" }} >
                                                     <img
-                                                        onDragStart={handelDrag}
+                                                        onDrag={handelDrag}
                                                         onDragEnd={handelDragEnd}
                                                         src={value}
                                                         draggable={true}
+                                                        className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1}
                                                     />
                                                 </Carousel.Slide>
                                             )
@@ -221,10 +223,11 @@ export default function RoundHouse() {
                                             return (
                                                 <Carousel.Slide key={i} style={{ width: "100%" }} >
                                                     <img
-                                                        onDragStart={handelDrag}
+                                                        onDrag={handelDrag}
                                                         onDragEnd={handelDragEnd}
                                                         src={value}
                                                         draggable={true}
+                                                        className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1}
                                                     />
                                                 </Carousel.Slide>
                                             )

@@ -1,7 +1,7 @@
 import { Carousel } from '@mantine/carousel';
 import '@mantine/carousel/styles.css';
 import { useParams } from "react-router-dom";
-import lessons from "../../data/lessons";
+import lessons, { lessonVideo } from "../../data/lessons";
 import { CarouselCart, LessonContent } from "../../styles/lesson";
 import RoundHouse from '../roundHouse';
 
@@ -14,10 +14,17 @@ export default function Content() {
     return (
         <LessonContent>
             {
-                page == 1 &&
-                <div>
-                    <img src={lesson.imagePage1} />
-                </div>
+                page == 1 && !lessonVideo.includes(itemNumber) ?
+                    <div>
+                        <img src={lesson.imagePage1} />
+                    </div> : null
+            }
+            {
+                page == 1 && lessonVideo.includes(itemNumber) ?
+                    <video controls>
+                        <source src={lesson.imagePage1} alt="video" >
+                        </source>
+                    </video> : null
             }
             {
                 page == 2 && page !== lesson.pages &&

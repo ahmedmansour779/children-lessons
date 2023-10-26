@@ -31,6 +31,7 @@ export const TitleHouse = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+    font-weight: bold;
 `
 
 export const Options = styled.div`
