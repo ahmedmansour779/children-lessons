@@ -227,7 +227,7 @@ export default function RoundHouse() {
                                                         onDragEnd={handelDragEnd}
                                                         src={value}
                                                         draggable={true}
-                                                        className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1}
+                                                        className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1 }
                                                     />
                                                 </Carousel.Slide>
                                             )

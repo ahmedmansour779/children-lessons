@@ -509,7 +509,7 @@ import { audio17_1, audio17_2 } from "./audio/17.js"
 import { audio18_1, audio18_2, audio18_3 } from "./audio/18.js"
 import { audio19_1, audio19_2 } from "./audio/19.js"
 // 20 : 29
-import { audio20_1, audio20_2, audio20_3 } from "./audio/20.js"
+import { audio20_1, audio20_2, audio20_3, audio20_4 } from "./audio/20.js"
 import { audio21_1, audio21_2, audio21_3, audio21_4 } from "./audio/21.js"
 import { audio22_1, audio22_2, audio22_3, audio22_4 } from "./audio/22.js"
 import { audio23_1, audio23_2, audio23_3, audio23_4 } from "./audio/23.js"
@@ -518,8 +518,9 @@ import { audio25_1, audio25_2 } from "./audio/25.js"
 import { audio26_1 } from "./audio/26.js"
 import { audio27_1, audio27_2, audio27_3 } from "./audio/27.js"
 import { audio28_1, audio28_2, audio28_3, audio28_4, audio28_5, audio28_6 } from "./audio/28.js"
-import { audio29_1, audio29_2, audio29_3 } from "./audio/29.js"
+import { audio29_1, audio29_2, audio29_3, audio29_4 } from "./audio/29.js"
 import { audio30_1, audio30_2 } from "./audio/30.js"
+import audioE from "../shared/end.opus"
 
 export const lessonVideo = [9]
 
@@ -542,6 +543,7 @@ const lessons = [
         audio2: audio1_2,
         audio3: audio1_3,
         audio4: audio1_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 7
     },
@@ -559,6 +561,7 @@ const lessons = [
         allImage: [image2_t_3, image2_t_4, image1_5_1, image2_t_1, image2_t_2, image1_5_2, image2_t_5, image2_t_6, image1_5_3, image2_t_7],
         audio1: audio2_1,
         audio3: audio2_2,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 7
     },
@@ -585,6 +588,7 @@ const lessons = [
         audio4: audio3_4,
         audio5: audio3_5,
         audio6: audio3_6,
+        audioEnd: audioE,
         pages: 7,
         circleParts: 7,
     },
@@ -603,6 +607,7 @@ const lessons = [
         audio1: audio4_1,
         audio2: audio4_2,
         audio3: audio4_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 5,
     },
@@ -620,6 +625,7 @@ const lessons = [
         audio1: audio5_1,
         audio2: audio5_2,
         audio3: audio5_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 7
     },
@@ -637,6 +643,7 @@ const lessons = [
         audio1: audio6_1,
         audio2: audio6_2,
         audio3: audio6_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 6,
     },
@@ -654,6 +661,7 @@ const lessons = [
         audio1: audio7_1,
         audio2: audio7_2,
         audio3: audio7_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 7,
     },
@@ -674,6 +682,7 @@ const lessons = [
         audio2: audio8_2,
         audio3: audio8_3,
         audio4: audio8_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 6,
     },
@@ -689,6 +698,7 @@ const lessons = [
         allImage: [image9_t_1, image9_t_2, image9_t_3, image9_t_4, image9_t_5, image9_t_6],
         audio1: audio9_1,
         audio2: audio9_2,
+        audioEnd: audioE,
         pages: 3,
         circleParts: 6
     },
@@ -703,6 +713,7 @@ const lessons = [
         allImage: [image10_t_1, image10_t_2, image10_t_3, image10_t_4, image10_t_5, image10_t_6],
         audio1: audio10_1,
         audio2: audio10_2,
+        audioEnd: audioE,
         pages: 3,
         circleParts: 6,
     },
@@ -720,6 +731,7 @@ const lessons = [
         audio1: audio11_1,
         audio2: audio11_2,
         audio3: audio11_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 6
     },
@@ -737,6 +749,7 @@ const lessons = [
         audio1: audio12_1,
         audio2: audio12_2,
         audio3: audio12_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 6
     },
@@ -747,16 +760,17 @@ const lessons = [
         title3: "طرق الوقايه من الامراض الغير معديه",
         title4: "التصرفات الصحيحه عند الاصابه من الامراض الغير معديه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
-        audio1: audio13_1,
-        audio2: audio13_2,
-        audio3: audio13_3,
-        audio4: audio13_4,
         imagePage1: image13_1_1,
         imagePage2: [image13_2_1, image13_2_2, image13_2_3, image13_2_4],
         imagePage3: [image13_3_1, image13_3_2, image13_3_3],
         imagePage4: [image13_4_1, image13_4_2, image13_4_3],
         imageTrue: [image13_t_1, image13_t_2, image13_t_3, image13_t_4, image13_t_5, image13_t_6, image13_t_7],
         allImage: [image13_t_1, image13_t_2, image13_t_3, image13_t_4, image13_t_5, image13_t_6, image13_t_7],
+        audio1: audio13_1,
+        audio2: audio13_2,
+        audio3: audio13_3,
+        audio4: audio13_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 7,
     },
@@ -777,6 +791,7 @@ const lessons = [
         audio2: audio14_2,
         audio3: audio14_3,
         audio4: audio14_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 7
     },
@@ -794,6 +809,7 @@ const lessons = [
         audio1: audio15_1,
         audio2: audio15_2,
         audio3: audio15_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 7,
     },
@@ -811,6 +827,7 @@ const lessons = [
         audio1: audio16_1,
         audio2: audio16_2,
         audio3: audio16_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 7
     },
@@ -827,6 +844,7 @@ const lessons = [
         allImage: [image17_t_1, image17_t_2, image17_t_3, image17_t_4, image17_t_5, image17_t_6, image17_t_7],
         audio1: audio17_1,
         audio3: audio17_2,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 7
     },
@@ -844,6 +862,7 @@ const lessons = [
         audio1: audio18_1,
         audio2: audio18_2,
         audio3: audio18_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 7
     },
@@ -858,10 +877,10 @@ const lessons = [
         allImage: [image19_t_1, image19_t_2, image19_t_3, image19_t_4, image19_t_5, image19_t_6],
         audio1: audio19_1,
         audio2: audio19_2,
+        audioEnd: audioE,
         pages: 3,
         circleParts: 6
     },
-    // not completed
     {
         id: 20,
         title1: "أبتعد عن الأدوات الحادة",
@@ -878,6 +897,8 @@ const lessons = [
         audio1: audio20_1,
         audio2: audio20_2,
         audio3: audio20_3,
+        audio4: audio20_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 7
     },
@@ -898,6 +919,7 @@ const lessons = [
         audio2: audio21_2,
         audio3: audio21_3,
         audio4: audio21_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 7
     },
@@ -918,6 +940,7 @@ const lessons = [
         audio2: audio22_2,
         audio3: audio22_3,
         audio4: audio22_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 6
     },
@@ -938,6 +961,7 @@ const lessons = [
         audio2: audio23_2,
         audio3: audio23_3,
         audio4: audio23_4,
+        audioEnd: audioE,
         pages: 5,
         circleParts: 7
     },
@@ -955,6 +979,7 @@ const lessons = [
         audio1: audio24_1,
         audio2: audio24_2,
         audio3: audio24_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 6,
     },
@@ -969,6 +994,7 @@ const lessons = [
         allImage: [image25_t_1, image25_t_2, image25_t_3, image25_t_4, image25_t_5],
         audio1: audio25_1,
         audio2: audio25_2,
+        audioEnd: audioE,
         pages: 3,
         circleParts: 5
     },
@@ -980,6 +1006,7 @@ const lessons = [
         imageTrue: [image26_t_1, image26_t_2, image26_t_3, image26_t_4, image26_t_5],
         allImage: [image26_t_1, image26_t_2, image26_t_3, image26_t_4, image26_t_5],
         audio1: audio26_1,
+        audioEnd: audioE,
         pages: 2,
         circleParts: 5
     },
@@ -997,6 +1024,7 @@ const lessons = [
         audio1: audio27_1,
         audio2: audio27_2,
         audio3: audio27_3,
+        audioEnd: audioE,
         pages: 4,
         circleParts: 6
     },
@@ -1023,27 +1051,30 @@ const lessons = [
         audio4: audio28_4,
         audio5: audio28_5,
         audio6: audio28_6,
+        audioEnd: audioE,
         pages: 7,
         circleParts: 6
     },
-    // not Completed
     {
         id: 29,
-        title1: "سلوكيات الطريق",
-        title2: "test",
-        title3: "test",
+        title1: "الاماكن العامه",
+        title2: "ما هي الاماكن العامه التي توجد حولنا",
+        title3: "السلوكيات الصحيحه التي يجب اتباعها في الاماكن العامه",
+        title4: "السلوكيات الخاطئه التي يجب تجنبها في الاماكن العامه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
         imagePage1: image29_1_1,
         imagePage2: [image29_2_1, image29_2_2, image29_2_3],
         imagePage3: [image29_3_1, image29_3_2],
         imagePage4: [image29_4_1, image29_4_2],
-        trueImage: [image29_t_1, image29_t_2, image29_t_3, image29_t_4, image29_t_5, image29_t_6, image29_t_7],
+        imageTrue: [image29_t_1, image29_t_2, image29_t_3, image29_t_4, image29_t_5, image29_t_6, image29_t_7],
         allImage: [image29_t_1, image29_t_2, image29_t_3, image29_t_4, image29_t_5, image29_t_6, image29_t_7],
         audio1: audio29_1,
         audio2: audio29_2,
         audio3: audio29_3,
+        audio4: audio29_4,
+        audioEnd: audioE,
         pages: 5,
-        true: 7
+        circleParts: 7
     },
     {
         id: 30,
@@ -1053,10 +1084,11 @@ const lessons = [
         imagePage1: image30_1_1,
         imagePage2: [image30_2_1, image30_2_2, image30_2_3],
         imagePage3: [image30_3_1, image30_3_2],
-        trueImage: [image30_t_1, image30_t_2, image30_t_3, image30_t_4, image30_t_5],
+        imageTrue: [image30_t_1, image30_t_2, image30_t_3, image30_t_4, image30_t_5],
         allImage: [image30_t_1, image30_t_2, image30_t_3, image30_t_4, image30_t_5],
         audio1: audio30_1,
         audio2: audio30_2,
+        audioEnd: audioE,
         pages: 3,
         circleParts: 5
     },
