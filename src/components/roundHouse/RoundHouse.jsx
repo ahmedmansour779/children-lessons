@@ -45,7 +45,6 @@ export default function RoundHouse() {
     // drag event 
     const handelDrag = (e) => {
         let idImage = e.target.className;
-        // let indexW = imageSrc.indexOf("w/")
         idImage !== undefined ? setDragId(idImage) : setDragId(null)
         drag = e.target
         drag.style.opacity = "0.5"
@@ -62,18 +61,14 @@ export default function RoundHouse() {
         setAnswer(true);
         setShow(true);
         e.target.appendChild(drag);
-        // trueAudioRef.current.play();
     }
     const falseAnswer = () => {
         setAnswer(false);
         setShow(true);
-        // falseAudioRef.current.play();
-        // console.log(false)
     }
     const handelDrop = (e) => {
-        // console.log("test")
         e.preventDefault();
-        console.log(e.target.children)
+        (e.target.children)
         if (dragId == e.target.id) {
             trueAnswer(e)
         } else if (dragId !== e.target.id) {
@@ -81,7 +76,6 @@ export default function RoundHouse() {
         }
     }
 
-    // console.log(show, answer)
 
     const hiddenModel = () => {
         setShow(false)
@@ -131,9 +125,6 @@ export default function RoundHouse() {
                             draggable={false}>
                             {
                                 lesson.allImage.map((value, i) => {
-                                    // console.log(value.includes("new")) // this to include or not
-                                    // let indexW = value.indexOf("w/")
-                                    // console.log(value[indexW + 2]) // to get id from image true
                                     return (
                                         <Carousel.Slide key={i} style={{ width: "100%" }} >
                                             <img
@@ -160,9 +151,6 @@ export default function RoundHouse() {
                                 draggable={false}>
                                 {
                                     lesson.allImage.map((value, i) => {
-                                        // console.log(value.includes("new")) // this to include or not
-                                        // let indexW = value.indexOf("w/")
-                                        // console.log(value[indexW + 2]) // to get id from image true
                                         return (
                                             <Carousel.Slide key={i} style={{ width: "100%" }} >
                                                 <img
@@ -189,9 +177,6 @@ export default function RoundHouse() {
                                     draggable={false}>
                                     {
                                         lesson.allImage.map((value, i) => {
-                                            // console.log(value.includes("new")) // this to include or not
-                                            // let indexW = value.indexOf("w/")
-                                            // console.log(value[indexW + 2]) // to get id from image true
                                             return (
                                                 <Carousel.Slide key={i} style={{ width: "100%" }} >
                                                     <img
@@ -217,9 +202,6 @@ export default function RoundHouse() {
                                     draggable={false}>
                                     {
                                         lesson.allImage.map((value, i) => {
-                                            // console.log(value.includes("new")) // this to include or not
-                                            // let indexW = value.indexOf("w/")
-                                            // console.log(value[indexW + 2]) // to get id from image true
                                             return (
                                                 <Carousel.Slide key={i} style={{ width: "100%" }} >
                                                     <img
@@ -227,7 +209,7 @@ export default function RoundHouse() {
                                                         onDragEnd={handelDragEnd}
                                                         src={value}
                                                         draggable={true}
-                                                        className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1 }
+                                                        className={lesson.imageTrue.includes(value) && lesson.imageTrue.indexOf(value) + 1}
                                                     />
                                                 </Carousel.Slide>
                                             )

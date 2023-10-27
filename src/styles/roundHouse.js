@@ -12,9 +12,9 @@ export const RoundHouseWrapper = styled.div`
 
 export const TitleHouseWrapper = styled.div`
     position: absolute;
-    width: 25%;
-    height: 25%;
-    margin: 37%;
+    width: 30%;
+    height: 30%;
+    margin: 34%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +30,9 @@ export const TitleHouse = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
+    text-align: center;
 `
 
 export const Options = styled.div`
