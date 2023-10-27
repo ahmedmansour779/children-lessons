@@ -1,3 +1,4 @@
+import image21_1_1 from "../../shared/lessonsImages/21/21/1_1.jpg"
 import image21_2_1 from "../../shared/lessonsImages/21/21/2/1.jpg"
 import image21_2_2 from "../../shared/lessonsImages/21/21/2/2.jpg"
 import image21_2_3 from "../../shared/lessonsImages/21/21/2/3.jpg"
@@ -17,6 +18,7 @@ import image21_t_6 from "../../shared/lessonsImages/21/21/New/6.jpg"
 import image21_t_7 from "../../shared/lessonsImages/21/21/New/7.jpg"
 
 export {
+    image21_1_1,
     image21_2_1,
     image21_2_2,
     image21_2_3,

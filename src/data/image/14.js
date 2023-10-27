@@ -10,14 +10,14 @@ import image14_4_1 from "../../shared/lessonsImages/14/14/4/1.jfif"
 import image14_4_2 from "../../shared/lessonsImages/14/14/4/2.jpg"
 import image14_4_3 from "../../shared/lessonsImages/14/14/4/3.jpg"
 import image14_4_4 from "../../shared/lessonsImages/14/14/4/4.jpg"
-import image14_4_5 from "../../shared/lessonsImages/14/14/4/5.jpg"
+import image14_4_5 from "../../shared/lessonsImages/14/14/4/5.png"
 import image14_t_1 from "../../shared/lessonsImages/14/14/New folder/1.jpg"
 import image14_t_2 from "../../shared/lessonsImages/14/14/New folder/2.jpg"
 import image14_t_3 from "../../shared/lessonsImages/14/14/New folder/3.jpg"
 import image14_t_4 from "../../shared/lessonsImages/14/14/New folder/4.jpg"
 import image14_t_5 from "../../shared/lessonsImages/14/14/New folder/5.jpg"
 import image14_t_6 from "../../shared/lessonsImages/14/14/New folder/6.jpg"
-import image14_t_7 from "../../shared/lessonsImages/14/14/New folder/7.jpg"
+import image14_t_7 from "../../shared/lessonsImages/14/14/New folder/7.jfif"
 
 export {
     image14_1_1,
@@ -41,3 +41,4 @@ export {
     image14_t_6,
     image14_t_7
 }
+

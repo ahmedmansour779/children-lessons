@@ -41,6 +41,7 @@ export default function Title() {
                             </TitleWrapper> :
                             part3.includes(itemNumber) ?
                                 <TitleWrapper part3>
+
                                     {lesson.title2}
                                 </TitleWrapper> :
                                 part4.includes(itemNumber) &&
