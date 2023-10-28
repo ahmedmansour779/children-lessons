@@ -1,4 +1,4 @@
-import image18_1_1 from "../../shared/lessonsImages/18/18/1-1.jpg"
+import image18_1_1 from "../../shared/lessonsImages/18/18/1-1.mp4"
 import image18_2_1 from "../../shared/lessonsImages/18/18/2/1.jpg"
 import image18_2_2 from "../../shared/lessonsImages/18/18/2/2.jpg"
 import image18_2_3 from "../../shared/lessonsImages/18/18/2/3.jpg"

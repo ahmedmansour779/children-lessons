@@ -509,6 +509,7 @@ import { audio17_1, audio17_2 } from "./audio/17.js"
 import { audio18_1, audio18_2, audio18_3 } from "./audio/18.js"
 import { audio19_1, audio19_2 } from "./audio/19.js"
 // 20 : 29
+import audioE from "../shared/end.opus"
 import { audio20_1, audio20_2, audio20_3, audio20_4 } from "./audio/20.js"
 import { audio21_1, audio21_2, audio21_3, audio21_4 } from "./audio/21.js"
 import { audio22_1, audio22_2, audio22_3, audio22_4 } from "./audio/22.js"
@@ -520,9 +521,8 @@ import { audio27_1, audio27_2, audio27_3 } from "./audio/27.js"
 import { audio28_1, audio28_2, audio28_3, audio28_4, audio28_5, audio28_6 } from "./audio/28.js"
 import { audio29_1, audio29_2, audio29_3, audio29_4 } from "./audio/29.js"
 import { audio30_1, audio30_2 } from "./audio/30.js"
-import audioE from "../shared/end.opus"
 
-export const lessonVideo = [9]
+export const lessonVideo = [1, 3, 9, 16, 18, 21, 23, 25, 27]
 
 const lessons = [
     {

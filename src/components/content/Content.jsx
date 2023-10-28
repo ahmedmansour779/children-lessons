@@ -21,7 +21,7 @@ export default function Content() {
             }
             {
                 page == 1 && lessonVideo.includes(itemNumber) ?
-                    <video controls>
+                    <video controls style={{ width: "100%" }}>
                         <source src={lesson.imagePage1} alt="video" >
                         </source>
                     </video> : null

@@ -1,4 +1,4 @@
-import image1_1 from "../../shared/lessonsImages/1/1_1.jpg"
+import image1_1 from "../../shared/lessonsImages/1/1_1.mp4"
 import image1_2_1 from "../../shared/lessonsImages/1/2/1.jpg"
 import image1_2_2 from "../../shared/lessonsImages/1/2/2.jpg"
 import image1_2_3 from "../../shared/lessonsImages/1/2/3.jpg"
@@ -52,3 +52,4 @@ export {
     image1_t_6,
     image1_t_7
 }
+

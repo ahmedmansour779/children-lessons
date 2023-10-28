@@ -1,4 +1,4 @@
-import image23_1_1 from "../../shared/lessonsImages/23/23/1-1.jpg"
+import image23_1_1 from "../../shared/lessonsImages/23/23/1-1.mp4"
 import image23_2_1 from "../../shared/lessonsImages/23/23/2/1.jfif"
 import image23_2_2 from "../../shared/lessonsImages/23/23/2/2.jpg"
 import image23_2_3 from "../../shared/lessonsImages/23/23/2/3.jpg"
@@ -35,3 +35,4 @@ export {
     image23_t_6,
     image23_t_7
 }
+
