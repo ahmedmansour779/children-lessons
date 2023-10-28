@@ -15,9 +15,14 @@ export const IntroContent = styled.div.attrs((props) => ({
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    min-height: 100%;
+    min-height: 100vh;
     align-items: center;
     justify-content: space-evenly;
+    align-content: flex-end;
+    @media (max-width:476px) {
+    align-content: space-between;
+    padding-top: 1rem;
+    }
     h1, h3 {
         font-family: 'Gochi Hand', cursive;
         color: #332522
@@ -30,9 +35,11 @@ export const IntroContent = styled.div.attrs((props) => ({
         gap: 2rem;
     }
     & > div:last-child {
-        min-height: 100vh;
     display: flex;
     align-items: flex-end;
+    img {
+        width: 100%;
+    }
     }
 `
 
@@ -46,9 +53,9 @@ export const Audio = styled.div`
 `
 
 export const Text = styled.div`
-    font-size: 2rem;
+    font-size: 1rem;
     border: 1px solid #ff0;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;

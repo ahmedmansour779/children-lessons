@@ -22,10 +22,42 @@
     overflow: hidden;
 }
 
+/* position: relative;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+background-color: transparent;
+border: 1px solid #000;
+overflow: hidden;
+display: flex;
+justify-content: flex-end; */
+
+/* position: absolute;
+width: 123px;
+padding: 0 10px;
+height: 151px;
+transform-origin: bottom left;
+display: flex;
+align-items: center;
+border: 1px solid #000;
+overflow: hidden; */
+
 .part img {
     width: 50%;
     height: 50%;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+@media (max-width: 767px) {
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .part {
+        width: 127px;
+        height: 149px;
+    }
 }

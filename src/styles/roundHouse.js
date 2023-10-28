@@ -8,6 +8,8 @@ export const RoundHouseWrapper = styled.div`
     align-items: center;
     min-width: 100%;
     padding: 2rem 0;
+    gap: 4rem;
+    flex-wrap: wrap;
 `
 
 export const TitleHouseWrapper = styled.div`
@@ -38,7 +40,7 @@ export const TitleHouse = styled.div`
 export const Options = styled.div`
     width: fit-content;
     height: 75vh;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -46,6 +48,11 @@ export const Options = styled.div`
     gap: 1rem;
     padding: 0.5rem;
     border-radius: 10px;
+    @media (max-width:768px) {
+        height: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
     &::-webkit-scrollbar {
         width: 0.75rem;
         background: transparent;
@@ -68,6 +75,9 @@ export const Options = styled.div`
         border-radius: 10px;
         overflow: hidden;
         cursor: move;
+        @media (max-width: 768px) {
+            width: auto;
+        }
     }
     
 `

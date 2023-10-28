@@ -8,6 +8,9 @@ export const LessonsContainer = styled.div.attrs((props) => ({
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content:space-between;
+    @media (max-width:375px) {
+        justify-content:center;
+    }
 `
 
 export const LessonWrapper = styled.div`

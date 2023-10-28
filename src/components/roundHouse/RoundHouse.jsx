@@ -1,6 +1,6 @@
 import { Carousel } from '@mantine/carousel';
 import '@mantine/carousel/styles.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import lessons from "../../data/lessons";
 import { part1, part2, part3 } from '../../data/parts';
@@ -27,6 +27,19 @@ export default function RoundHouse() {
 
     let [show, setShow] = useState(null)
     let [answer, setAnswer] = useState(null)
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth >= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     for (let i = 1; i <= lesson.circleParts; i++) {
         myArray.push(i)
@@ -119,10 +132,11 @@ export default function RoundHouse() {
                     <Options part1>
                         <Carousel
                             slideSize="70%"
-                            orientation="vertical"
+                            orientation={isMobile && "vertical"}
                             slideGap="xs"
                             align="start"
-                            draggable={false}>
+                            draggable={isMobile && false}
+                            dragFree>
                             {
                                 lesson.allImage.map((value, i) => {
                                     return (
@@ -145,10 +159,10 @@ export default function RoundHouse() {
                         <Options part2>
                             <Carousel
                                 slideSize="70%"
-                                orientation="vertical"
+                                orientation={isMobile && "vertical"}
                                 slideGap="xs"
                                 align="start"
-                                draggable={false}>
+                                draggable={isMobile && false}>
                                 {
                                     lesson.allImage.map((value, i) => {
                                         return (
@@ -171,10 +185,10 @@ export default function RoundHouse() {
                             <Options part3>
                                 <Carousel
                                     slideSize="70%"
-                                    orientation="vertical"
+                                    orientation={isMobile && "vertical"}
                                     slideGap="xs"
                                     align="start"
-                                    draggable={false}>
+                                    draggable={isMobile && false}>
                                     {
                                         lesson.allImage.map((value, i) => {
                                             return (
@@ -196,10 +210,10 @@ export default function RoundHouse() {
                             <Options part4>
                                 <Carousel
                                     slideSize="70%"
-                                    orientation="vertical"
+                                    orientation={isMobile && "vertical"}
                                     slideGap="xs"
                                     align="start"
-                                    draggable={false}>
+                                    draggable={isMobile && false}>
                                     {
                                         lesson.allImage.map((value, i) => {
                                             return (

@@ -15,8 +15,8 @@ export default function Content() {
         <LessonContent>
             {
                 page == 1 && !lessonVideo.includes(itemNumber) ?
-                    <div>
-                        <img src={lesson.imagePage1} />
+                    <div style={{ width: "100%" }}>
+                        <img style={{ width: "100%" }} src={lesson.imagePage1} />
                     </div> : null
             }
             {
