@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import lessons from "../../data/lessons";
+import lessons, { lessonMaze, lessonPuzzle, lessonTrueOrFalse } from "../../data/lessons";
 import { part1, part2, part3, part4 } from "../../data/parts";
 import { TitleWrapper } from "../../styles/title";
 
@@ -8,6 +8,8 @@ export default function Title() {
     let itemNumber = +lessonId
     let page = lessonPage;
     let lesson = lessons[itemNumber - 1]
+    let roundHousePage = lesson.pages - 1
+
     return (
         <>
             {
@@ -30,7 +32,7 @@ export default function Title() {
                                 </TitleWrapper> : null
             }
             {
-                page == 2 ?
+                page == 2 && page !== lesson.pages && lesson.title2 ?
                     part1.includes(itemNumber) ?
                         <TitleWrapper part1>
                             {lesson.title2}
@@ -41,7 +43,6 @@ export default function Title() {
                             </TitleWrapper> :
                             part3.includes(itemNumber) ?
                                 <TitleWrapper part3>
-
                                     {lesson.title2}
                                 </TitleWrapper> :
                                 part4.includes(itemNumber) &&
@@ -164,10 +165,68 @@ export default function Title() {
                                 </TitleWrapper> : null
             }
 
+            {
+                page == lesson.pages & lessonMaze.includes(itemNumber) ?
+                    part1.includes(itemNumber) ?
+                        <TitleWrapper part1>
+                            {lesson.titleQuizzes}
+                        </TitleWrapper> :
+                        part2.includes(itemNumber) ?
+                            <TitleWrapper part2>
+                                {lesson.titleQuizzes}
+                            </TitleWrapper> :
+                            part3.includes(itemNumber) ?
+                                <TitleWrapper part3>
+                                    {lesson.titleQuizzes}
+                                </TitleWrapper> :
+                                part4.includes(itemNumber) &&
+                                <TitleWrapper part4>
+                                    {lesson.titleQuizzes}
+                                </TitleWrapper> : null
+            }
+
+            {
+                page == lesson.pages & lessonPuzzle.includes(itemNumber) ?
+                    part1.includes(itemNumber) ?
+                        <TitleWrapper part1>
+                            {lesson.titleQuizzes}
+                        </TitleWrapper> :
+                        part2.includes(itemNumber) ?
+                            <TitleWrapper part2>
+                                {lesson.titleQuizzes}
+                            </TitleWrapper> :
+                            part3.includes(itemNumber) ?
+                                <TitleWrapper part3>
+                                    {lesson.titleQuizzes}
+                                </TitleWrapper> :
+                                part4.includes(itemNumber) &&
+                                <TitleWrapper part4>
+                                    {lesson.titleQuizzes}
+                                </TitleWrapper> : null
+            }
+            {
+                page == lesson.pages & lessonTrueOrFalse.includes(itemNumber) ?
+                    part1.includes(itemNumber) ?
+                        <TitleWrapper part1>
+                            {lesson.titleQuizzes}
+                        </TitleWrapper> :
+                        part2.includes(itemNumber) ?
+                            <TitleWrapper part2>
+                                {lesson.titleQuizzes}
+                            </TitleWrapper> :
+                            part3.includes(itemNumber) ?
+                                <TitleWrapper part3>
+                                    {lesson.titleQuizzes}
+                                </TitleWrapper> :
+                                part4.includes(itemNumber) &&
+                                <TitleWrapper part4>
+                                    {lesson.titleQuizzes}
+                                </TitleWrapper> : null
+            }
 
 
             {
-                page == lesson.pages ?
+                page == roundHousePage ?
                     part1.includes(itemNumber) ?
                         <TitleWrapper part1>
                             {lesson.titleEnd}

@@ -522,7 +522,16 @@ import { audio28_1, audio28_2, audio28_3, audio28_4, audio28_5, audio28_6 } from
 import { audio29_1, audio29_2, audio29_3, audio29_4 } from "./audio/29.js"
 import { audio30_1, audio30_2 } from "./audio/30.js"
 
+const link14_1 = "https://ahmedmansour779.github.io/lesson14-1/";
+const link14_2 = "https://ahmedmansour779.github.io/lesson14-2/";
+const link14_3 = "https://ahmedmansour779.github.io/lesson14-3/";
+
 export const lessonVideo = [1, 3, 9, 16, 18, 21, 23, 25, 27]
+
+export const lessonMaze = [3, 9, 14, 19, 23, 26, 27]
+export const lessonMazeMore = [14, 19, 26]
+export const lessonTrueOrFalse = []
+export const lessonPuzzle = [5, 10, 7, 17, 21, 25]
 
 const lessons = [
     {
@@ -532,6 +541,7 @@ const lessons = [
         title3: "ما هي أسباب الحريق",
         title4: "أدوات أطفاء الحريق",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image1_1,
         imagePage2: [image1_2_1, image1_2_2, image1_2_3, image1_2_4],
         imagePage3: [image1_3_1, image1_3_2, image1_3_3, image1_3_4, image1_3_5],
@@ -544,7 +554,7 @@ const lessons = [
         audio3: audio1_3,
         audio4: audio1_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 7
     },
     {
@@ -553,6 +563,7 @@ const lessons = [
         title2: "ماذا افعل عند حدوث الحريق",
         title3: "تصرفات غير صحيحه عند حدوث الحريق يجب ان ابتعد عنها",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image2_1_1,
         imagePage2: [image2_2_1, image2_2_2, image2_2_3, image2_2_4, image2_2_5],
         imagePage3: [image2_3_1, image2_3_2, image2_3_3, image2_3_4],
@@ -562,7 +573,7 @@ const lessons = [
         audio1: audio2_1,
         audio3: audio2_2,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 7
     },
     {
@@ -574,6 +585,8 @@ const lessons = [
         title5: "سياره رجل الإطفاء",
         title6: "طريقه الوصول لرجل الإطفاء",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
+        linkMaze: "https://ahmedmansour779.github.io/lesson3/",
         imagePage1: image3_1_1,
         imagePage2: [image3_2_1, image3_2_2, image3_2_3],
         imagePage3: [image3_3_1],
@@ -589,7 +602,7 @@ const lessons = [
         audio5: audio3_5,
         audio6: audio3_6,
         audioEnd: audioE,
-        pages: 7,
+        pages: 8,
         circleParts: 7,
     },
     {
@@ -598,6 +611,7 @@ const lessons = [
         title2: "ماذا تعني كلمه تزاحم",
         title3: "اماكن لا يجب التزاحم فيها في الروضه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image4_1_1,
         imagePage2: [image4_2_1],
         imagePage3: [image4_3_1, image4_3_2],
@@ -608,7 +622,7 @@ const lessons = [
         audio2: audio4_2,
         audio3: audio4_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 5,
     },
     {
@@ -617,16 +631,20 @@ const lessons = [
         title2: "ما هي ادوات اللعب داخل الروضه",
         title3: "كيفيه استخدام الالعاب بشكل سليم",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image5_1_1,
         imagePage2: [image5_2_1, image5_2_2, image5_2_3, image5_2_4, image5_2_5, image5_2_6],
         imagePage3: [image5_3_1, image5_3_2, image5_3_3, image5_3_4, image5_3_5, image5_3_6],
         imageTrue: [image5_t_1, image5_t_2, image5_t_3, image5_t_4, image5_t_5, image5_t_6, image5_t_7],
         allImage: [image5_t_1, image5_t_2, image5_t_3, image5_t_4, image5_t_5, image5_t_6, image5_t_7],
+        imagePuzzle1: image5_2_1,
+        imagePuzzle2: image5_3_1,
+        imagePuzzle3: image5_1_1,
         audio1: audio5_1,
         audio2: audio5_2,
         audio3: audio5_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 7
     },
     {
@@ -635,6 +653,7 @@ const lessons = [
         title2: "ما هي اماكن اللعب في الروضه",
         title3: "السلوكيات الصحيحه التي يجب اتباعها في اماكن اللعب",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image6_1_1,
         imagePage2: [image6_2_1, image6_2_2, image6_2_3, image6_2_4],
         imagePage3: [image6_3_1, image6_3_2, image6_3_3, image6_3_4],
@@ -644,7 +663,7 @@ const lessons = [
         audio2: audio6_2,
         audio3: audio6_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 6,
     },
     {
@@ -653,16 +672,20 @@ const lessons = [
         title2: "ما هي الكهرباء",
         title3: "مصادر الحصول علي الكهرباء",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image7_1_1,
         imagePage2: [image7_2_1, image7_2_2, image7_2_3, image7_2_4],
         imagePage3: [image7_3_1, image7_3_2, image7_3_3, image7_3_4],
         imageTrue: [image7_t_1, image7_t_2, image7_t_3, image7_t_4, image7_t_5, image7_t_6, image7_t_7],
         allImage: [image7_t_1, image7_t_2, image7_t_3, image7_t_4, image7_t_5, image7_t_6, image7_t_7],
+        imagePuzzle1: image7_3_1,
+        imagePuzzle2: image7_3_2,
+        imagePuzzle3: image7_3_3,
         audio1: audio7_1,
         audio2: audio7_2,
         audio3: audio7_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 7,
     },
     {
@@ -672,6 +695,7 @@ const lessons = [
         title3: "السلوكيات الصحيحه للتعامل مع الكهرباء في الروضه",
         title4: "السلوكيات الخاطئه للتعامل مع الكهرباء في الروضه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image8_1_1,
         imagePage2: [image8_2_1, image8_2_2],
         imagePage3: [image8_3_1, image8_3_2, image8_3_3],
@@ -683,7 +707,7 @@ const lessons = [
         audio3: audio8_3,
         audio4: audio8_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 6,
     },
     {
@@ -691,6 +715,8 @@ const lessons = [
         title1: "قصه حيوانات الغابة السعيدة والتطعيمات",
         title2: "تفتكروا يا اصدقائي ما هي اهميه التطعيمات",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
+        linkMaze: "https://ahmedmansour779.github.io/lesson9/",
         imagePage1: image9_1_1,
         imagePage2: [image9_2_1],
         imagePage3: [image9_3_1, image9_3_2, image9_3_3],
@@ -699,7 +725,7 @@ const lessons = [
         audio1: audio9_1,
         audio2: audio9_2,
         audioEnd: audioE,
-        pages: 3,
+        pages: 4,
         circleParts: 6
     },
     {
@@ -707,14 +733,18 @@ const lessons = [
         title1: "تطعيماتي المهمة",
         title2: "ما هي التطعيمات الضروريه التي يجب الحصول عليها",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image10_1_1,
         imagePage2: [image10_2_1, image10_2_2, image10_2_3, image10_2_4, image10_2_5, image10_2_6],
         imageTrue: [image10_t_1, image10_t_2, image10_t_3, image10_t_4, image10_t_5, image10_t_6],
         allImage: [image10_t_1, image10_t_2, image10_t_3, image10_t_4, image10_t_5, image10_t_6],
+        imagePuzzle1: image10_2_1,
+        imagePuzzle2: image10_2_3,
+        imagePuzzle3: image10_2_6,
         audio1: audio10_1,
         audio2: audio10_2,
         audioEnd: audioE,
-        pages: 3,
+        pages: 4,
         circleParts: 6,
     },
     {
@@ -723,6 +753,7 @@ const lessons = [
         title2: "اماكن تلقي التطعيمات",
         title3: "خطوره عدم تلقي التطعيمات",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image11_1_1,
         imagePage2: [image11_2_1, image11_2_2],
         imagePage3: [image11_3_1, image11_3_2, image11_3_3, image11_3_4, image11_3_5],
@@ -732,7 +763,7 @@ const lessons = [
         audio2: audio11_2,
         audio3: audio11_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 6
     },
     {
@@ -741,6 +772,7 @@ const lessons = [
         title2: "ما هي الامراض التي قد تصيبنا",
         title3: "بعض العادات السليمه للوقايه من الامراض",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image12_1_1,
         imagePage2: [image12_2_1, image12_2_2, image12_2_3],
         imagePage3: [image12_3_1, image12_3_2, image12_3_3, image12_3_4],
@@ -750,7 +782,7 @@ const lessons = [
         audio2: audio12_2,
         audio3: audio12_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 6
     },
     {
@@ -760,6 +792,7 @@ const lessons = [
         title3: "طرق الوقايه من الامراض الغير معديه",
         title4: "التصرفات الصحيحه عند الاصابه من الامراض الغير معديه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image13_1_1,
         imagePage2: [image13_2_1, image13_2_2, image13_2_3, image13_2_4],
         imagePage3: [image13_3_1, image13_3_2, image13_3_3],
@@ -771,7 +804,7 @@ const lessons = [
         audio3: audio13_3,
         audio4: audio13_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 7,
     },
     {
@@ -781,6 +814,8 @@ const lessons = [
         title3: "السلوكيات الصحيحه لتجنب الامراض المعديه",
         title4: "سلوكيات خاطئه يجب الابتعاد عنها لتجنب الامراض المعديه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
+        linkMaze: [link14_1, link14_2, link14_3],
         imagePage1: image14_1_1,
         imagePage2: [image14_2_1, image14_2_2],
         imagePage3: [image14_3_1, image14_3_2, image14_3_3, image14_3_4, image14_3_5],
@@ -792,7 +827,7 @@ const lessons = [
         audio3: audio14_3,
         audio4: audio14_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 7
     },
     {
@@ -801,6 +836,7 @@ const lessons = [
         title2: "اشكال الاصابات السطحيه",
         title3: "اسباب الاصابات السطحيه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image15_1_1,
         imagePage2: [image15_2_1, image15_2_2, image15_2_3],
         imagePage3: [image15_3_1, image15_3_2, image15_3_3, image15_3_4, image15_3_5],
@@ -810,7 +846,7 @@ const lessons = [
         audio2: audio15_2,
         audio3: audio15_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 7,
     },
     {
@@ -819,6 +855,7 @@ const lessons = [
         title2: "افعال يجب الابتعاد عنها لتجنب الاصابات السطحيه",
         title3: "طرق التعامل الصحيحه للتعامل مع الاصابات السطحيه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image16_1_1,
         imagePage2: [image16_2_1, image16_2_2, image16_2_3, image16_2_4],
         imagePage3: [image16_3_1, image16_3_2, image16_3_3, image16_3_4],
@@ -828,24 +865,29 @@ const lessons = [
         audio2: audio16_2,
         audio3: audio16_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 7
     },
+    // not completed
     {
         id: 17,
         title1: "مصادر الكهرباء في منزلنا",
         title2: "",
         title3: "الاجهزه الكهربائيه في المنزل",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image17_1_1,
         imagePage2: [image17_2_1, image17_2_2, image17_2_3],
         imagePage3: [image17_3_1, image17_3_2, image17_3_3, image17_3_4],
         imageTrue: [image17_t_1, image17_t_2, image17_t_3, image17_t_4, image17_t_5, image17_t_6, image17_t_7],
         allImage: [image17_t_1, image17_t_2, image17_t_3, image17_t_4, image17_t_5, image17_t_6, image17_t_7],
+        imagePuzzle1: image17_2_1,
+        imagePuzzle2: image17_3_1,
+        imagePuzzle3: image17_3_2,
         audio1: audio17_1,
         audio3: audio17_2,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 7
     },
     {
@@ -854,6 +896,7 @@ const lessons = [
         title2: "التصرفات الصحيحه أثناء التعامل مع الاجهزه الكهربائيه في المنزل",
         title3: "التصرفات الخاطئه أثناء التعامل مع الاجهزه الكهربائيه في المنزل",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image18_1_1,
         imagePage2: [image18_2_1, image18_2_2, image18_2_3, image18_2_4, image18_2_5],
         imagePage3: [image18_3_1, image18_3_2, image18_3_3],
@@ -863,7 +906,7 @@ const lessons = [
         audio2: audio18_2,
         audio3: audio18_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 7
     },
     {
@@ -871,6 +914,11 @@ const lessons = [
         title1: "الأدوات الحادة في المنزل",
         title2: "ما هي الأدوات الحادة في منزلي",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
+        linkMaze: [
+            "https://ahmedmansour779.github.io/lesson19-1/",
+            "https://ahmedmansour779.github.io/lesson19-2/"
+        ],
         imagePage1: image19_1_1,
         imagePage2: [image19_2_1, image19_2_2, image19_2_3, image19_2_4, image19_2_5, image19_2_6],
         imageTrue: [image19_t_1, image19_t_2, image19_t_3, image19_t_4, image19_t_5, image19_t_6],
@@ -878,7 +926,7 @@ const lessons = [
         audio1: audio19_1,
         audio2: audio19_2,
         audioEnd: audioE,
-        pages: 3,
+        pages: 4,
         circleParts: 6
     },
     {
@@ -888,6 +936,7 @@ const lessons = [
         title3: "كيف نتجنب مخاطر الادوات الحاده",
         title4: "ما هي الاداوات الحاده",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image20_1_1,
         imagePage2: [image20_2_1, image20_2_2],
         imagePage3: [image20_3_1, image20_3_2],
@@ -899,7 +948,7 @@ const lessons = [
         audio3: audio20_3,
         audio4: audio20_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 7
     },
     {
@@ -909,18 +958,22 @@ const lessons = [
         title3: "سلوكيات خاطئه عند استخدام المواد القابله للاشتعال",
         title4: "الاخطار الناجمه من المواد القابله للاشتعال",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image21_1_1,
         imagePage2: [image21_2_1, image21_2_2, image21_2_3],
         imagePage3: [image21_3_1, image21_3_2, image21_3_3, image21_3_4],
         imagePage4: [image21_4_1, image21_4_2, image21_4_3],
         imageTrue: [image21_t_1, image21_t_2, image21_t_3, image21_t_4, image21_t_5, image21_t_6, image21_t_7],
         allImage: [image21_t_1, image21_t_2, image21_t_3, image21_t_4, image21_t_5, image21_t_6, image21_t_7],
+        imagePuzzle1: image21_4_1,
+        imagePuzzle2: image21_2_2,
+        imagePuzzle3: image21_2_1,
         audio1: audio21_1,
         audio2: audio21_2,
         audio3: audio21_3,
         audio4: audio21_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 7
     },
     {
@@ -930,6 +983,7 @@ const lessons = [
         title3: "اضرار الافراض في استخدام الهواتف الذكيه",
         title4: "سلوكيات صحيحه يجب اتباعها عند استخدام الهواتف الذكيه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image22_1_1,
         imagePage2: [image22_2_1, image22_2_2, image22_2_3, image22_2_4],
         imagePage3: [image22_3_1],
@@ -941,7 +995,7 @@ const lessons = [
         audio3: audio22_3,
         audio4: audio22_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 6
     },
     {
@@ -951,6 +1005,8 @@ const lessons = [
         title3: "اضرار استخدام الانترنت ب افراض",
         title4: "نصائح عند استخدام الانترنت",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
+        linkMaze: "https://ahmedmansour779.github.io/lesson23/",
         imagePage1: image23_1_1,
         imagePage2: [image23_2_1, image23_2_2, image23_2_3, image23_2_4],
         imagePage3: [image23_3_1, image23_3_2],
@@ -962,7 +1018,7 @@ const lessons = [
         audio3: audio23_3,
         audio4: audio23_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 7
     },
     {
@@ -971,6 +1027,7 @@ const lessons = [
         title2: "ما هي السلوكيات الصحيحه التي يجب اتباعها في اثناء السير علي الطريق",
         title3: "ما هي السلوكيات الخاطئه التي يجب الابتعاد عنها اثناء السير علي الطريق",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image24_1_1,
         imagePage2: [image24_2_1, image24_2_2, image24_2_3],
         imagePage3: [image24_3_1, image24_3_2, image24_3_3, image24_3_4, image24_3_5, image24_3_6],
@@ -980,7 +1037,7 @@ const lessons = [
         audio2: audio24_2,
         audio3: audio24_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 6,
     },
     {
@@ -988,26 +1045,35 @@ const lessons = [
         title1: "أشارات المرور",
         title2: "ما هي أشارات المرور",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image25_1_1,
         imagePage2: [image25_2_1, image25_2_2, image25_2_3, image25_2_4, image25_2_5],
         imageTrue: [image25_t_1, image25_t_2, image25_t_3, image25_t_4, image25_t_5],
         allImage: [image25_t_1, image25_t_2, image25_t_3, image25_t_4, image25_t_5],
+        imagePuzzle1: image25_2_1,
+        imagePuzzle2: image25_2_2,
+        imagePuzzle3: image25_2_3,
         audio1: audio25_1,
         audio2: audio25_2,
         audioEnd: audioE,
-        pages: 3,
+        pages: 4,
         circleParts: 5
     },
     {
         id: 26,
         title1: "اداب المرور",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
+        linkMaze: [
+            "https://ahmedmansour779.github.io/lesson26-1/",
+            "https://ahmedmansour779.github.io/lesson26-2/"
+        ],
         imagePage1: image26_1_1,
         imageTrue: [image26_t_1, image26_t_2, image26_t_3, image26_t_4, image26_t_5],
         allImage: [image26_t_1, image26_t_2, image26_t_3, image26_t_4, image26_t_5],
         audio1: audio26_1,
         audioEnd: audioE,
-        pages: 2,
+        pages: 3,
         circleParts: 5
     },
     {
@@ -1016,6 +1082,8 @@ const lessons = [
         title2: "أهمية أشارات المرور ",
         title3: "نصائح اثناء اتباع اشارات المرور",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
+        linkMaze: "https://ahmedmansour779.github.io/lesson27/",
         imagePage1: image27_1_1,
         imagePage2: [image27_2_1, image27_2_2, image27_2_3, image27_2_4],
         imagePage3: [image27_3_1, image27_3_2, image27_3_3],
@@ -1025,7 +1093,7 @@ const lessons = [
         audio2: audio27_2,
         audio3: audio27_3,
         audioEnd: audioE,
-        pages: 4,
+        pages: 5,
         circleParts: 6
     },
     {
@@ -1037,6 +1105,7 @@ const lessons = [
         title5: "مكان عمل شرطي المرور",
         title6: "ادوات شرطي المرور",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image28_1_1,
         imagePage2: [image28_2_1, image28_2_2],
         imagePage3: [image28_3_1],
@@ -1052,7 +1121,7 @@ const lessons = [
         audio5: audio28_5,
         audio6: audio28_6,
         audioEnd: audioE,
-        pages: 7,
+        pages: 8,
         circleParts: 6
     },
     {
@@ -1062,6 +1131,7 @@ const lessons = [
         title3: "السلوكيات الصحيحه التي يجب اتباعها في الاماكن العامه",
         title4: "السلوكيات الخاطئه التي يجب تجنبها في الاماكن العامه",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image29_1_1,
         imagePage2: [image29_2_1, image29_2_2, image29_2_3],
         imagePage3: [image29_3_1, image29_3_2],
@@ -1073,7 +1143,7 @@ const lessons = [
         audio3: audio29_3,
         audio4: audio29_4,
         audioEnd: audioE,
-        pages: 5,
+        pages: 6,
         circleParts: 7
     },
     {
@@ -1081,6 +1151,7 @@ const lessons = [
         title1: "وسائل المواصلات",
         title2: "السلوكيات الصحيحه والخاطئه عند استخدام وسائل المواصلات",
         titleEnd: "هيا بنا الي بيتنا الدائري",
+        titleQuizzes: "Quizzes",
         imagePage1: image30_1_1,
         imagePage2: [image30_2_1, image30_2_2, image30_2_3],
         imagePage3: [image30_3_1, image30_3_2],
@@ -1089,7 +1160,7 @@ const lessons = [
         audio1: audio30_1,
         audio2: audio30_2,
         audioEnd: audioE,
-        pages: 3,
+        pages: 4,
         circleParts: 5
     },
 ]
