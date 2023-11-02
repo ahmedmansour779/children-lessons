@@ -17,7 +17,17 @@ export const ChoicesItem = styled.div`
     border-radius: 10px;
     background-color: ${style.next};
     justify-content: space-between;
+    width: 30%;
+    height: 100vh;
+    @media (max-width:476px) {
+        width: 27%;
+        height: 42vh; 
+    }
+    div {
+        height: 30%;
+    }
     img {
-        width: 30vw;
+        height: 100%;
+        width: 100%;
     }
 `
