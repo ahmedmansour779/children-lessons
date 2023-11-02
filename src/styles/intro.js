@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const IntroWrapper = styled.div`
     min-height: 100vh;
-    background-color: #ffc15b;
+    background-color: #D988B9;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -16,9 +16,7 @@ export const IntroContent = styled.div.attrs((props) => ({
     flex-wrap: wrap;
     flex-direction: row;
     min-height: 100vh;
-    align-items: center;
     justify-content: space-evenly;
-    align-content: flex-end;
     @media (max-width:476px) {
     align-content: space-between;
     padding-top: 1rem;
@@ -31,14 +29,31 @@ export const IntroContent = styled.div.attrs((props) => ({
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 2rem;
+        width: 50%;
+        text-align: center;
+        @media (max-width:476px) {
+            width: 100%; 
+        }
     }
     & > div:last-child {
-    display: flex;
-    align-items: flex-end;
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 1rem;
+        align-content: center;
+    @media (max-width:476px) {
+            width: 100%; 
+    }
     img {
-        width: 100%;
+        width: 35%;
+        height: 14rem;
+        @media (max-width:476px) {
+            width: 47%; 
+        }
     }
     }
 `
@@ -59,4 +74,21 @@ export const Text = styled.div`
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+`
+
+export const LogoWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+`
+
+export const Logo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    img {
+        width: 4rem; 
+    }
 `

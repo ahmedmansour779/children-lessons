@@ -15,6 +15,8 @@ import image2_t_4 from "../../shared/lessonsImages/2/new/4.jpg"
 import image2_t_5 from "../../shared/lessonsImages/2/new/5.jpg"
 import image2_t_6 from "../../shared/lessonsImages/2/new/6.jfif"
 import image2_t_7 from "../../shared/lessonsImages/2/new/7.jpg"
+import image2_q_1 from "../../shared/lessonsImages/2/q/1.jpg"
+import image2_q_2 from "../../shared/lessonsImages/2/q/2.jpg"
 
 export {
     image2_1_1,
@@ -27,6 +29,8 @@ export {
     image2_3_2,
     image2_3_3,
     image2_3_4,
+    image2_q_1,
+    image2_q_2,
     image2_t_1,
     image2_t_2,
     image2_t_3,

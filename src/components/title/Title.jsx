@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import lessons, { lessonMaze, lessonPuzzle, lessonTrueOrFalse } from "../../data/lessons";
+import lessons from "../../data/lessons";
 import { part1, part2, part3, part4 } from "../../data/parts";
 import { TitleWrapper } from "../../styles/title";
 
@@ -166,46 +166,7 @@ export default function Title() {
             }
 
             {
-                page == lesson.pages & lessonMaze.includes(itemNumber) ?
-                    part1.includes(itemNumber) ?
-                        <TitleWrapper part1>
-                            {lesson.titleQuizzes}
-                        </TitleWrapper> :
-                        part2.includes(itemNumber) ?
-                            <TitleWrapper part2>
-                                {lesson.titleQuizzes}
-                            </TitleWrapper> :
-                            part3.includes(itemNumber) ?
-                                <TitleWrapper part3>
-                                    {lesson.titleQuizzes}
-                                </TitleWrapper> :
-                                part4.includes(itemNumber) &&
-                                <TitleWrapper part4>
-                                    {lesson.titleQuizzes}
-                                </TitleWrapper> : null
-            }
-
-            {
-                page == lesson.pages & lessonPuzzle.includes(itemNumber) ?
-                    part1.includes(itemNumber) ?
-                        <TitleWrapper part1>
-                            {lesson.titleQuizzes}
-                        </TitleWrapper> :
-                        part2.includes(itemNumber) ?
-                            <TitleWrapper part2>
-                                {lesson.titleQuizzes}
-                            </TitleWrapper> :
-                            part3.includes(itemNumber) ?
-                                <TitleWrapper part3>
-                                    {lesson.titleQuizzes}
-                                </TitleWrapper> :
-                                part4.includes(itemNumber) &&
-                                <TitleWrapper part4>
-                                    {lesson.titleQuizzes}
-                                </TitleWrapper> : null
-            }
-            {
-                page == lesson.pages & lessonTrueOrFalse.includes(itemNumber) ?
+                page == lesson.pages ?
                     part1.includes(itemNumber) ?
                         <TitleWrapper part1>
                             {lesson.titleQuizzes}

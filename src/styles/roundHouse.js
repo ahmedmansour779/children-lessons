@@ -32,7 +32,7 @@ export const TitleHouse = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 `

@@ -6,8 +6,6 @@ export default function Maze() {
     let itemNumber = +lessonId
     let lesson = lessons[itemNumber - 1]
 
-    console.log(lesson)
-
     return (
         <>
             {

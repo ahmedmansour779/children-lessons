@@ -11,6 +11,7 @@ import image28_t_3 from "../../shared/lessonsImages/28/28/New folder/3.jpg"
 import image28_t_4 from "../../shared/lessonsImages/28/28/New folder/4.jpg"
 import image28_t_5 from "../../shared/lessonsImages/28/28/New folder/5.jfif"
 import image28_t_6 from "../../shared/lessonsImages/28/28/New folder/6.jpg"
+import image28_q_1 from "../../shared/lessonsImages/28/28/quiz/1.jpg"
 
 export {
     image28_1_1,
@@ -20,6 +21,7 @@ export {
     image28_4_1,
     image28_5_1,
     image28_6_1,
+    image28_q_1,
     image28_t_1,
     image28_t_2,
     image28_t_3,
@@ -27,3 +29,4 @@ export {
     image28_t_5,
     image28_t_6
 }
+

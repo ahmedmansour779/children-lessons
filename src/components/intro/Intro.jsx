@@ -1,10 +1,15 @@
-import { IconPlayerPauseFilled, IconPlayerPlayFilled } from "@tabler/icons-react";
+import { IconPlayerPauseFilled, IconPlayerPlayFilled, IconPlayerSkipForwardFilled } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Link } from 'react-router-dom';
-import image from "../../shared/children.png";
+import image1 from "../../shared/1.jpg";
+import image2 from "../../shared/2.jpg";
+import image3 from "../../shared/3.jpg";
+import image4 from "../../shared/4.jpg";
 import audioSrc from "../../shared/introMusic.mp3";
-import { Audio, IntroContent, IntroWrapper, Text } from "../../styles/intro";
+import Logo1 from "../../shared/logo1.png";
+import Logo2 from "../../shared/logo2.png";
+import { Audio, IntroContent, IntroWrapper, Logo, LogoWrapper } from "../../styles/intro";
 
 export default function Intro() {
     const audioRef = useRef(null);
@@ -52,19 +57,68 @@ export default function Intro() {
             <IntroWrapper>
                 <IntroContent>
                     <div>
-                        <h1>Kids</h1>
-                        <h3>TOYS & GAMES & LEARN</h3>
-                        <Text>
-                            جاهزون يا أطفال ؟
-                        </Text>
-                        <Audio style={{ cursor: "pointer" }} onClick={togglePlayPause}>
-                            {
-                                isPlaying ?
-                                    <IconPlayerPauseFilled color="#332522" /> :
-                                    <IconPlayerPlayFilled color="#332522" />
-                            }
-                        </Audio>
-                        <div>
+                        <LogoWrapper>
+                            <Logo>
+                                <img src={Logo2} />
+                                <p>كليه التربية للطفولة المبكرة</p>
+                            </Logo>
+                            <Logo>
+                                <img src={Logo1} />
+                                <p>جامعة بني سويف</p>
+                            </Logo>
+                        </LogoWrapper>
+                        <div style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "1.5rem"
+                        }}>
+                            <div style={{
+                                fontWeight: "bold"
+                            }}>
+                                فاعلية برنامج قائم على إستراتيجية مخطط البيت الدائري الإلكتروني في تنمية بعض مفاهيم الأمن والسلامة لدى أطفال الروضة
+                            </div>
+                            <div>
+                                The effectiveness of a program based on the strategy of the
+                                electronic round house scheme in developing some concepts of
+                                security and safety among kindergarten children
+                            </div>
+                            <div>
+                                بحث مكمل ضمن متطلبات الحصول على درجة الماجستير
+                                في التربية  للطفولة المبكره قسم العلوم التربوية
+                            </div>
+                            <div>
+                                <div>
+                                    إعداد الباحثة
+                                </div>
+                                <div>
+                                    منة الله هاني محمد
+                                </div>
+                                <div>
+                                    معيدة بكلية التربية للطفولة المبكرة
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            style={{
+                                display: "flex",
+                                gap: "2rem",
+                                flexWrap: "wrap"
+                            }}
+                        >
+                            <Audio style={{ cursor: "pointer" }} onClick={togglePlayPause}>
+                                {
+                                    isPlaying ?
+                                        <IconPlayerPauseFilled color="#332522" /> :
+                                        <IconPlayerPlayFilled color="#332522" />
+                                }
+                            </Audio>
+                            <Audio style={{ cursor: "pointer" }}>
+                                <Link to="/children-lessons/lessons/">
+                                    <IconPlayerSkipForwardFilled color="#332522" />
+                                </Link>
+                            </Audio>
+                        </div>
+                        <div style={{ display: "none" }}>
                             <audio ref={audioRef} >
                                 <source src={audioSrc} type="audio/mpeg" />
                                 Your browser does not support the audio element.
@@ -75,7 +129,10 @@ export default function Intro() {
                         </div>
                     </div>
                     <div>
-                        <img src={image} alt="boy" />
+                        <img src={image1} alt="boy" />
+                        <img src={image2} alt="boy" />
+                        <img src={image3} alt="boy" />
+                        <img src={image4} alt="boy" />
                     </div>
                 </IntroContent>
             </IntroWrapper>

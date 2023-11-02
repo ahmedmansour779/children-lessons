@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import lessons from "../../data/lessons";
+import lessons, { lessonChoices, lessonDelivery, lessonDescription, lessonMaze, lessonPuzzle } from "../../data/lessons";
 
 export default function Audio() {
     let { lessonId, lessonPage } = useParams();
@@ -56,6 +56,36 @@ export default function Audio() {
                 page == 8 && page !== lesson.pages && page !== roundHousePage && lesson.audio8 ?
                     <audio autoPlay>
                         <source src={lesson.audio8} type="audio/ogg; codecs=opus" />
+                    </audio> : null
+            }
+            {
+                page == lesson.pages && lessonChoices.includes(itemNumber) ?
+                    <audio autoPlay>
+                        <source src={lesson.choiceAudio} type="audio/ogg; codecs=opus" />
+                    </audio> : null
+            }
+            {
+                page == lesson.pages && lessonMaze.includes(itemNumber) ?
+                    <audio autoPlay>
+                        <source src={lesson.audioMaze} type="audio/ogg; codecs=opus" />
+                    </audio> : null
+            }
+            {
+                page == lesson.pages && lessonDelivery.includes(itemNumber) ?
+                    <audio autoPlay>
+                        <source src={lesson.deliveryAudio} type="audio/ogg; codecs=opus" />
+                    </audio> : null
+            }
+            {
+                page == lesson.pages && lessonPuzzle.includes(itemNumber) ?
+                    <audio autoPlay>
+                        <source src={lesson.coloringAudio} type="audio/ogg; codecs=opus" />
+                    </audio> : null
+            }
+            {
+                page == lesson.pages && lessonDescription.includes(itemNumber) ?
+                    <audio autoPlay>
+                        <source src={lesson.descriptionAudio} type="audio/ogg; codecs=opus" />
                     </audio> : null
             }
             {

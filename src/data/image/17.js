@@ -13,6 +13,9 @@ import image17_t_4 from "../../shared/lessonsImages/17/17/New folder/4.jpg"
 import image17_t_5 from "../../shared/lessonsImages/17/17/New folder/5.jpg"
 import image17_t_6 from "../../shared/lessonsImages/17/17/New folder/6.jpg"
 import image17_t_7 from "../../shared/lessonsImages/17/17/New folder/7.jpg"
+import image17_q_1 from "../../shared/lessonsImages/17/17/quiz/1.jpg"
+import image17_q_2 from "../../shared/lessonsImages/17/17/quiz/2.jpg"
+import image17_q_3 from "../../shared/lessonsImages/17/17/quiz/3.jpg"
 
 export {
     image17_1_1,
@@ -23,6 +26,9 @@ export {
     image17_3_2,
     image17_3_3,
     image17_3_4,
+    image17_q_1,
+    image17_q_2,
+    image17_q_3,
     image17_t_1,
     image17_t_2,
     image17_t_3,

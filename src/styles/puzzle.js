@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import style from "../../styles/config";
+import style from "./config";
 
 export const PuzzleGameWrapper = styled.div`
     width: 100%;

@@ -1,12 +1,13 @@
 import { Carousel } from '@mantine/carousel';
 import '@mantine/carousel/styles.css';
 import { useParams } from "react-router-dom";
-import lessons, { lessonMaze, lessonPuzzle, lessonTrueOrFalse, lessonVideo } from "../../data/lessons";
+import lessons, { lessonChoices, lessonDelivery, lessonMaze, lessonPuzzle, lessonVideo } from "../../data/lessons";
 import { CarouselCart, LessonContent } from "../../styles/lesson";
+import Choices from '../choices/Choices';
+import Delivery from '../delivery';
 import Maze from '../maze/Maze';
 import Puzzle from '../puzzle/Puzzle';
 import RoundHouse from '../roundHouse';
-import TrueOrFalse from '../trueOrFalse/TrueOrFalse';
 
 
 export default function Content() {
@@ -91,7 +92,6 @@ export default function Content() {
                         controlSize={27}
                         slidesToScroll={1}
                         withControls={true}
-                        align="start"
                         dragFree>
                         {
                             lesson.imagePage4.map((value, i) => {
@@ -194,8 +194,10 @@ export default function Content() {
                     <Maze /> :
                     page == lesson.pages & lessonPuzzle.includes(itemNumber) ?
                         <Puzzle /> :
-                        page == lesson.pages & lessonTrueOrFalse.includes(itemNumber) ?
-                            <TrueOrFalse /> : null
+                        page == lesson.pages & lessonChoices.includes(itemNumber) ?
+                            <Choices /> :
+                            page == lesson.pages & lessonDelivery.includes(itemNumber) ?
+                                <Delivery /> : null
             }
         </LessonContent>
     )

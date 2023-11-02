@@ -18,6 +18,9 @@ import image5_t_4 from "../../shared/lessonsImages/5/5/New folder/4.jpg"
 import image5_t_5 from "../../shared/lessonsImages/5/5/New folder/5.jpg"
 import image5_t_6 from "../../shared/lessonsImages/5/5/New folder/6.jpg"
 import image5_t_7 from "../../shared/lessonsImages/5/5/New folder/7.jpg"
+import image5_q_1 from "../../shared/lessonsImages/5/5/quizze/1.jpg"
+import image5_q_2 from "../../shared/lessonsImages/5/5/quizze/2.jpg"
+
 
 export {
     image5_1_1,
@@ -32,8 +35,8 @@ export {
     image5_3_3,
     image5_3_4,
     image5_3_5,
-    image5_3_6,
-    image5_t_1,
+    image5_3_6, image5_q_1,
+    image5_q_2, image5_t_1,
     image5_t_2,
     image5_t_3,
     image5_t_4,

@@ -14,6 +14,8 @@ import image7_t_4 from "../../shared/lessonsImages/7/7/New folder/4.jpg"
 import image7_t_5 from "../../shared/lessonsImages/7/7/New folder/5.jfif"
 import image7_t_6 from "../../shared/lessonsImages/7/7/New folder/6.jpg"
 import image7_t_7 from "../../shared/lessonsImages/7/7/New folder/7.jpg"
+import image7_q_1 from "../../shared/lessonsImages/7/7/quiz/1.png"
+import image7_q_2 from "../../shared/lessonsImages/7/7/quiz/2.png"
 
 export {
     image7_1_1,
@@ -25,6 +27,8 @@ export {
     image7_3_2,
     image7_3_3,
     image7_3_4,
+    image7_q_1,
+    image7_q_2,
     image7_t_1,
     image7_t_2,
     image7_t_3,
@@ -33,3 +37,4 @@ export {
     image7_t_6,
     image7_t_7
 }
+

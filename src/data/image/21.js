@@ -16,6 +16,8 @@ import image21_t_4 from "../../shared/lessonsImages/21/21/New/4.jpg"
 import image21_t_5 from "../../shared/lessonsImages/21/21/New/5.jpg"
 import image21_t_6 from "../../shared/lessonsImages/21/21/New/6.jpg"
 import image21_t_7 from "../../shared/lessonsImages/21/21/New/7.jpg"
+import image21_q_1 from "../../shared/lessonsImages/21/21/quiz/1.jpg"
+import image21_q_2 from "../../shared/lessonsImages/21/21/quiz/2.jpg"
 
 export {
     image21_1_1,
@@ -29,6 +31,8 @@ export {
     image21_4_1,
     image21_4_2,
     image21_4_3,
+    image21_q_1,
+    image21_q_2,
     image21_t_1,
     image21_t_2,
     image21_t_3,

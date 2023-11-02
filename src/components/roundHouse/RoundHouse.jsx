@@ -4,13 +4,10 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import lessons from "../../data/lessons";
 import { part1, part2, part3 } from '../../data/parts';
-
-
 import falseAudio from "../../shared/answer/false.mp3";
 import falseImage from "../../shared/answer/false.png";
 import trueAudio from "../../shared/answer/true.mp3";
 import trueImage from "../../shared/answer/true.png";
-
 import { AnswerWrapper, Options, PopupWrapper, RoundHouseWrapper, TitleHouse, TitleHouseWrapper } from "../../styles/roundHouse";
 import "./style.css";
 
@@ -100,7 +97,11 @@ export default function RoundHouse() {
                 <div className="circle" >
                     <TitleHouseWrapper>
                         <TitleHouse>
-                            {lesson.title1}
+                            {
+                                lessonId == 9 ?
+                                    "التطعيمات" :
+                                    lesson.title1
+                            }
                         </TitleHouse>
                     </TitleHouseWrapper>
                     {

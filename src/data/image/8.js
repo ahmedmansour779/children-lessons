@@ -1,4 +1,5 @@
 import image8_1_1 from "../../shared/lessonsImages/8/8/1-1.jpg"
+import image8_q_1 from "../../shared/lessonsImages/8/8/1.jpg"
 import image8_2_1 from "../../shared/lessonsImages/8/8/2/1.jpg"
 import image8_2_2 from "../../shared/lessonsImages/8/8/2/2.jpg"
 import image8_3_1 from "../../shared/lessonsImages/8/8/3/1.jpg"
@@ -20,6 +21,7 @@ export {
     image8_3_2,
     image8_3_3,
     image8_4_1,
+    image8_q_1,
     image8_t_1,
     image8_t_2,
     image8_t_3,
@@ -27,3 +29,4 @@ export {
     image8_t_5,
     image8_t_6
 }
+

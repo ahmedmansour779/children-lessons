@@ -3,7 +3,9 @@ import image24_2_1 from "../../shared/lessonsImages/24/24/2/1.jpg"
 import image24_2_2 from "../../shared/lessonsImages/24/24/2/2.jpg"
 import image24_2_3 from "../../shared/lessonsImages/24/24/2/3.jpg"
 import image24_3_1 from "../../shared/lessonsImages/24/24/3/(1).jpg"
-import { default as image24_3_2, default as image24_3_3, default as image24_3_4 } from "../../shared/lessonsImages/24/24/3/2.jpg"
+import image24_3_2 from "../../shared/lessonsImages/24/24/3/2.jpg"
+import image24_3_3 from "../../shared/lessonsImages/24/24/3/3.jpg"
+import image24_3_4 from "../../shared/lessonsImages/24/24/3/4.jpg"
 import image24_3_5 from "../../shared/lessonsImages/24/24/3/5.jpg"
 import image24_3_6 from "../../shared/lessonsImages/24/24/3/6.jpg"
 import image24_t_1 from "../../shared/lessonsImages/24/24/New folder/1.jpg"
@@ -31,3 +33,4 @@ export {
     image24_t_5,
     image24_t_6
 }
+

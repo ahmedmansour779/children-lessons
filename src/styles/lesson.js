@@ -20,6 +20,8 @@ export const CarouselCart = styled.div`
     width: 36rem;
     height: 21rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     img {
         height: 100%;
     }

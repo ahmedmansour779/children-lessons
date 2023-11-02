@@ -9,6 +9,7 @@ import image25_t_2 from "../../shared/lessonsImages/25/25/New folder/2.jpg"
 import image25_t_3 from "../../shared/lessonsImages/25/25/New folder/3.jpg"
 import image25_t_4 from "../../shared/lessonsImages/25/25/New folder/4.jpg"
 import image25_t_5 from "../../shared/lessonsImages/25/25/New folder/5.jfif"
+import image25_q_1 from "../../shared/lessonsImages/25/25/quiz/1.jpg"
 
 export {
     image25_1_1,
@@ -17,6 +18,7 @@ export {
     image25_2_3,
     image25_2_4,
     image25_2_5,
+    image25_q_1,
     image25_t_1,
     image25_t_2,
     image25_t_3,
