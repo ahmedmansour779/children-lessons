@@ -22,32 +22,30 @@
     overflow: hidden;
 }
 
-/* position: relative;
-width: 300px;
-height: 300px;
-border-radius: 50%;
-background-color: transparent;
-border: 1px solid #000;
-overflow: hidden;
-display: flex;
-justify-content: flex-end; */
-
-/* position: absolute;
-width: 123px;
-padding: 0 10px;
-height: 151px;
-transform-origin: bottom left;
-display: flex;
-align-items: center;
-border: 1px solid #000;
-overflow: hidden; */
-
 .part img {
     width: 60%;
     height: 60%;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.part:nth-of-type(7) img {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.part:nth-of-type(6) img,
+.part:nth-of-type(5) img,
+.part:nth-of-type(4) img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 @media (max-width: 767px) {
